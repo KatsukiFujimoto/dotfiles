@@ -1,3 +1,5 @@
+tap "mutagen-io/mutagen"
+
 brew "ansible"
 brew "argocd"
 brew "awscli"
