@@ -91,3 +91,8 @@ relative_path_for_neovim_coc="$(dirname $0)/coc-settings.json"
 absolute_path_for_neovim_coc="$(pwd)${relative_path_for_neovim_coc:1}"
 mkdir -p ~/.config/nvim
 ln -snf $absolute_path_for_neovim_coc ~/.config/nvim/
+
+# git completion
+mkdir -p ~/.zsh
+wget -O ~/.zsh/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+wget -O ~/.zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
