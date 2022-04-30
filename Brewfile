@@ -16,6 +16,7 @@ brew "kubernetes-cli"
 brew "lazydocker"
 brew "lazygit"
 brew "lima"
+brew "mas"
 brew "minikube"
 brew "mutagen"
 brew "mutagen-compose"
@@ -68,3 +69,5 @@ cask "rectangle"
 cask "alfred"
 cask "karabiner-elements"
 cask "flameshot"
+
+mas "LINE", id: 539883307
