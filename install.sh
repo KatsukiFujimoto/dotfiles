@@ -2,6 +2,7 @@
 
 set -u
 
+# homebrew
 brew_installed() {
   which brew > /dev/null 2>&1
 }
