@@ -47,7 +47,7 @@ fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit -i
 
 # ===== git prompt =====
-source ~/.zsh/.git-prompt.sh
+source ~/.zsh/git-prompt.sh
 
 # プロンプトに各種情報を表示
 GIT_PS1_SHOWDIRTYSTATE=1
