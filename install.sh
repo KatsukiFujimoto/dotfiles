@@ -108,3 +108,7 @@ else
   echo "downloading git-completion.zsh"
   wget -O ~/.zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 fi
+
+# mac input speed
+defaults read -g InitialKeyRepeat -eq 1 || defaults write -g InitialKeyRepeat -int 1
+defaults read -g KeyRepeat -eq 1 || defaults write -g KeyRepeat -int 1
