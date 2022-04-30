@@ -1,0 +1,24 @@
+[[plugins]]
+repo = "yuku-t/vim-ref-ri"
+# "vim-ref-ri": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuku-t/vim-ref-ri",
+#   "repo": "yuku-t/vim-ref-ri",
+#   "normalized_name": "ref-ri",
+#   "merged": 1,
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuku-t/vim-ref-ri",
+#   "sourced": 1,
+#   "name": "vim-ref-ri"
+# },
+# "vim-ref-ri":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuku-t/vim-ref-ri",
+#   repo:"yuku-t/vim-ref-ri",
+#   normalized_name:"ref-ri",
+#   merged:1,
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuku-t/vim-ref-ri",
+#   sourced:1,
+#   name:"vim-ref-ri"
+# },

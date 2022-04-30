@@ -1,0 +1,24 @@
+[[plugins]]
+repo = "townk/vim-autoclose"
+# "vim-autoclose": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/townk/vim-autoclose",
+#   "repo": "townk/vim-autoclose",
+#   "normalized_name": "autoclose",
+#   "merged": 1,
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/townk/vim-autoclose",
+#   "sourced": 1,
+#   "name": "vim-autoclose"
+# },
+# "vim-autoclose":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/townk/vim-autoclose",
+#   repo:"townk/vim-autoclose",
+#   normalized_name:"autoclose",
+#   merged:1,
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/townk/vim-autoclose",
+#   sourced:1,
+#   name:"vim-autoclose"
+# },

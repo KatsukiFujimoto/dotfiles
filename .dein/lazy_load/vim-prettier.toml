@@ -1,0 +1,39 @@
+[[plugins]]
+repo = "prettier/vim-prettier"
+merge = 0
+on_ft = ["javascript", "typescript", "vue", "css", "scss", "json", "markdown"]
+hook_source = '''
+  " @formatアノテーションを持ったファイルの自動フォーマットを無効にする
+  let g:prettier#autoformat = 0
+  " Prettierのパースエラーをquickfixに表示しない
+  let g:prettier#quickfix_enabled = 0
+  autocmd BufWritePre *.js,*.ts,*.vue,*.css,*.scss,*.json,*.md PrettierAsync
+'''
+# "vim-prettier": {
+#   "lazy": 1,
+#   "sourced": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/prettier/vim-prettier",
+#   "build": "npm install",
+#   "repo": "prettier/vim-prettier",
+#   "merged": 0,
+#   "normalized_name": "prettier",
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/prettier/vim-prettier",
+#   "hook_source": "  \" @formatアノテーションを持ったファイルの自動フォーマットを無効にする\n  let g:prettier#autoformat = 0\n\n  \" Prettierのパースエラーをquickfixに表示しない\n  let g:prettier#quickfix_enabled = 0\n\n  autocmd BufWritePre *.js,*.ts,*.vue,*.css,*.scss,*.json,*.md PrettierAsync\n",
+#   "on_ft": ["javascript", "typescript", "vue", "css", "scss", "json", "markdown"],
+#   "name": "vim-prettier"
+# },
+# "vim-prettier":{
+#   lazy:1,
+#   sourced:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/prettier/vim-prettier",
+#   build:"npm install",
+#   repo:"prettier/vim-prettier",
+#   merged:0,
+#   normalized_name:"prettier",
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/prettier/vim-prettier",
+#   hook_source:"  \" @formatアノテーションを持ったファイルの自動フォーマットを無効にする\n  let g:prettier#autoformat = 0\n\n  \" Prettierのパースエラーをquickfixに表示しない\n  let g:prettier#quickfix_enabled = 0\n\n  autocmd BufWritePre *.js,*.ts,*.vue,*.css,*.scss,*.json,*.md PrettierAsync\n",
+#   on_ft:["javascript", "typescript", "vue", "css", "scss", "json", "markdown"],
+#   name:"vim-prettier"
+# },

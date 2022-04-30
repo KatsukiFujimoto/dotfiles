@@ -1,0 +1,11 @@
+{
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  },
+  "solargraph.checkGemVersion" : false
+}

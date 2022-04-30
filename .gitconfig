@@ -1,0 +1,39 @@
+[core]
+    excludesfile = ~/.gitignore
+    editor = nvim
+
+[alias]
+    ch                   = checkout
+    chf                  = !git branch -a | fzf | xargs git checkout
+    st                   = status
+    cm                   = commit
+    di                   = diff
+    dif                  = !git diff --name-only | fzf | xargs git diff
+    br                   = branch
+    lg                   = log --oneline --decorate
+    lgf                  = !"f(){ git log --pretty=format:'- %s' -n $1 --reverse; };f"
+    lgr                  = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+    ft                   = fetch
+    rb                   = rebase
+    rb-remote            = !git rebase origin/$(git br --show-current)
+    rb-master            = !git rebase origin/master
+    delete-merged-branch = !"f(){ git br --merged | egrep -v 'develop|staging|production|master|main' | xargs git branch -d; };f"
+
+[user]
+  	name  = KatsukiFujimoto
+  	email = kf1996cnbl@gmail.com
+
+[init]
+    templatedir = ~/.config/git_template
+
+[delta]
+    side-by-side = true
+
+[pager]
+    diff   = delta
+    log    = delta
+    reflog = delta
+    show   = delta
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive

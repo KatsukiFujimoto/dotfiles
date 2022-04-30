@@ -1,0 +1,40 @@
+[[plugins]]
+repo = "tpope/vim-surround"
+
+# normal mode
+# csはchange surroundと覚えれば良い
+# cs{変更前のsurround}{変更後のsurround}
+# ds"'
+
+# dsはdelete surroundと覚えれば良い
+# ds(削除対象のsurround)
+# ds"
+
+# visual mode
+# S"
+
+# メモ
+# {や[だとスペースを含むが、}や]だとスペースを含まない
+
+# "vim-surround": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
+#   "repo": "tpope/vim-surround",
+#   "normalized_name": "surround",
+#   "merged": 1,
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
+#   "sourced": 1,
+#   "name": "vim-surround"
+# },
+# "vim-surround":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
+#   repo:"tpope/vim-surround",
+#   normalized_name:"surround",
+#   merged:1,
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
+#   sourced:1,
+#   name:"vim-surround"
+# },

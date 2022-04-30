@@ -1,0 +1,10 @@
+[[plugins]]
+repo = "iberianpig/tig-explorer.vim"
+hook_add = '''
+  " tigを開く
+  nnoremap <Leader>tig :TigOpenProjectRootDir<CR>
+  " 現在のファイルの履歴を見る
+  nnoremap <Leader>tigh :TigOpenCurrentFile<CR>
+  " 現在のカーソル位置でtig blameする
+  nnoremap <Leader>tigb :TigBlame<CR>
+'''

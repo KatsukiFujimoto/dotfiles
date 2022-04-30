@@ -1,0 +1,33 @@
+[[plugins]]
+repo = "easymotion/vim-easymotion"
+hook_add = '''
+  let g:EasyMotion_do_mapping = 0
+  let g:EasyMotion_smartcase = 1
+  nmap <leader>s <Plug>(easymotion-s2)
+  map <leader>j <Plug>(easymotion-j)
+  map <leader>k <Plug>(easymotion-k)
+'''
+# "vim-easymotion": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/easymotion/vim-easymotion",
+#   "name": "vim-easymotion",
+#   "repo": "easymotion/vim-easymotion",
+#   "hook_add": "  let g:EasyMotion_do_mapping = 0\n  let g:EasyMotion_smartcase = 1\n  nmap <leader>s <Plug>(easymotion-s2)\n  map <leader>j <Plug>(easymotion-j)\n  map <leader>k <Plug>(easymotion-k)\n",
+#   "merged": 1,
+#   "normalized_name": "easymotion",
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/easymotion/vim-easymotion",
+#   "sourced": 1
+# },
+# "vim-easymotion":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/easymotion/vim-easymotion",
+#   name:"vim-easymotion",
+#   repo:"easymotion/vim-easymotion",
+#   hook_add:"  let g:EasyMotion_do_mapping = 0\n  let g:EasyMotion_smartcase = 1\n  nmap <leader>s <Plug>(easymotion-s2)\n  map <leader>j <Plug>(easymotion-j)\n  map <leader>k <Plug>(easymotion-k)\n",
+#   merged:1,
+#   normalized_name:"easymotion",
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/easymotion/vim-easymotion",
+#   sourced:1
+# },

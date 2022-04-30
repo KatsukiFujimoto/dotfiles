@@ -1,0 +1,35 @@
+[[plugins]]
+repo = "nathanaelkane/vim-indent-guides"
+hook_add = '''
+  let g:indent_guides_enable_on_vim_startup = 1
+  if has('nvim')
+  else
+    let g:indent_guides_auto_colors = 0
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238
+  endif
+'''
+# "vim-indent-guides": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/nathanaelkane/vim-indent-guides",
+#   "name": "vim-indent-guides",
+#   "repo": "nathanaelkane/vim-indent-guides",
+#   "hook_add": "  let g:indent_guides_enable_on_vim_startup = 1\n  let g:indent_guides_auto_colors = 0\n  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236\n  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238\n",
+#   "merged": 1,
+#   "normalized_name": "indent-guides",
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/nathanaelkane/vim-indent-guides",
+#   "sourced": 1
+# },
+# "vim-indent-guides":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/nathanaelkane/vim-indent-guides",
+#   name:"vim-indent-guides",
+#   repo:"nathanaelkane/vim-indent-guides",
+#   hook_add:"  let g:indent_guides_enable_on_vim_startup = 1\n  let g:indent_guides_auto_colors = 0\n  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236\n  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238\n",
+#   merged:1,
+#   normalized_name:"indent-guides",
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/nathanaelkane/vim-indent-guides",
+#   sourced:1
+# },

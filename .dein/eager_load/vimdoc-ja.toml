@@ -1,0 +1,24 @@
+[[plugins]]
+repo = "vim-jp/vimdoc-ja"
+# "vimdoc-ja": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/vim-jp/vimdoc-ja",
+#   "repo": "vim-jp/vimdoc-ja",
+#   "normalized_name": "vimdoc-ja",
+#   "merged": 1,
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/vim-jp/vimdoc-ja",
+#   "sourced": 1,
+#   "name": "vimdoc-ja"
+# },
+# "vimdoc-ja":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/vim-jp/vimdoc-ja",
+#   repo:"vim-jp/vimdoc-ja",
+#   normalized_name:"vimdoc-ja",
+#   merged:1,
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/vim-jp/vimdoc-ja",
+#   sourced:1,
+#   name:"vimdoc-ja"
+# },

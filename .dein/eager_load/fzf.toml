@@ -1,0 +1,50 @@
+[[plugins]]
+repo = "junegunn/fzf"
+merge = 0
+build = "./install --all"
+hook_add = '''
+  let $FZF_DEFAULT_OPTS="--layout=reverse"
+  " ~/.rgignoreにグローバル設定を記載、.ignoreにローカル設定を記載
+  let $FZF_DEFAULT_COMMAND="rg --files --hidden --follow --no-ignore-vcs"
+  " let $FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git/**'"
+  let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.9, 'height': 0.9,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
+  " This is the default extra key bindings
+  let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+  noremap <leader>f :Files<CR>
+  noremap <leader>g :GFiles<CR>
+  noremap <leader>G :GFiles?<CR>
+  noremap <leader>cm :Commits<CR>
+  noremap <leader>b :Buffers<CR>
+  noremap <leader>h :History<CR>
+  noremap <leader>H :History:<CR>
+  noremap <leader>r :Rg<CR>
+'''
+# "fzf": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf",
+#   "build": "./install --all",
+#   "name": "fzf",
+#   "repo": "junegunn/fzf",
+#   "hook_add": "  let $FZF_DEFAULT_OPTS=\"--layout=reverse\"\n  let $FZF_DEFAULT_COMMAND=\"rg --files --hidden --glob '!.git/**'\"\n  let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.9, 'height': 0.9,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }\n  noremap <leader>f :Files<CR>\n  noremap <leader>g :GFiles<CR>\n  noremap <leader>G :GFiles?<CR>\n  noremap <leader>cm :Commits<CR>\n  noremap <leader>b :Buffers<CR>\n  noremap <leader>h :History<CR>\n  noremap <leader>H :History:<CR>\n  noremap <leader>r :Rg<CR>\n",
+#   "merged": 0,
+#   "normalized_name": "fzf",
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf",
+#   "sourced": 1
+# },
+# fzf:{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf",
+#   build:"./install --all",
+#   name:"fzf",
+#   repo:"junegunn/fzf",
+#   hook_add:"  let $FZF_DEFAULT_OPTS=\"--layout=reverse\"\n  let $FZF_DEFAULT_COMMAND=\"rg --files --hidden --glob '!.git/**'\"\n  let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.9, 'height': 0.9,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }\n  noremap <leader>f :Files<CR>\n  noremap <leader>g :GFiles<CR>\n  noremap <leader>G :GFiles?<CR>\n  noremap <leader>cm :Commits<CR>\n  noremap <leader>b :Buffers<CR>\n  noremap <leader>h :History<CR>\n  noremap <leader>H :History:<CR>\n  noremap <leader>r :Rg<CR>\n",
+#   merged:0,
+#   normalized_name:"fzf",
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf",
+#   sourced:1
+# },

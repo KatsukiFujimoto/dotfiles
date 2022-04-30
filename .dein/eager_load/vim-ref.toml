@@ -1,0 +1,24 @@
+[[plugins]]
+repo = "thinca/vim-ref"
+# "vim-ref": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/thinca/vim-ref",
+#   "repo": "thinca/vim-ref",
+#   "normalized_name": "ref",
+#   "merged": 1,
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/thinca/vim-ref",
+#   "sourced": 1,
+#   "name": "vim-ref"
+# },
+# "vim-ref":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/thinca/vim-ref",
+#   repo:"thinca/vim-ref",
+#   normalized_name:"ref",
+#   merged:1,
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/thinca/vim-ref",
+#   sourced:1,
+#   name:"vim-ref"
+# },

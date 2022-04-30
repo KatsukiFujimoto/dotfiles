@@ -1,0 +1,24 @@
+[[plugins]]
+repo = "mattn/emmet-vim"
+# "emmet-vim": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/mattn/emmet-vim",
+#   "repo": "mattn/emmet-vim",
+#   "normalized_name": "emmet",
+#   "merged": 1,
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/mattn/emmet-vim",
+#   "sourced": 1,
+#   "name": "emmet-vim"
+# },
+# "emmet-vim":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/mattn/emmet-vim",
+#   repo:"mattn/emmet-vim",
+#   normalized_name:"emmet",
+#   merged:1,
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/mattn/emmet-vim",
+#   sourced:1,
+#   name:"emmet-vim"
+# },

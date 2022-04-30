@@ -1,0 +1,84 @@
+[[plugins]]
+repo = "neoclide/coc.nvim"
+merge = 0
+rev = "release"
+hook_add = '''
+  " 環境移行をしやすい様に、インストールしたいextensionsを指定
+  " coc-rls
+  " coc-rust-analyzer
+  " coc-solargraph https://issueexplorer.com/issue/neoclide/coc-solargraph/61
+  let g:coc_global_extensions = [
+   \ "coc-json",
+   \ "coc-yaml",
+   \ "coc-toml",
+   \ "coc-emmet",
+   \ "coc-html",
+   \ "coc-css",
+   \ "coc-sh",
+   \ "coc-sql",
+   \ "coc-graphql",
+   \ "coc-vimlsp",
+   \ "coc-python",
+   \ "coc-rust-analyzer",
+   \ "coc-solargraph",
+   \ "coc-tsserver",
+   \ "coc-eslint",
+   \ "coc-go",
+  \ ]
+  " ポップアップウィンドウのスクロール
+  " 第一引数でスクロール方向、第二引数で行数、第二引数がなければページ単位のスクロール
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1, 3) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0, 3) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1, 3)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0, 3)\<cr>" : "\<Left>"
+  nmap <silent> cdx :call CocAction("jumpDefinition", "split")<CR>
+  nmap <silent> cdv :call CocAction("jumpDefinition", "vsplit")<CR>
+  nmap <silent> cdt :call CocAction("jumpDefinition", "tabe")<CR>
+  nmap <silent> ctx :call CocAction("jumpTypeDefinition", "split")<CR>
+  nmap <silent> ctv :call CocAction("jumpTypeDefinition", "vsplit")<CR>
+  nmap <silent> ctt :call CocAction("jumpTypeDefinition", "tabe")<CR>
+  nmap <silent> cdec :call CocAction("jumpDeclaration", "vsplit")<CR>
+  nmap <silent> cix :call CocAction("jumpImplementation", "split")<CR>
+  nmap <silent> civ :call CocAction("jumpImplementation", "vsplit")<CR>
+  nmap <silent> cit :call CocAction("jumpImplementation", "tabe")<CR>
+  nmap <silent> crx :call CocAction("jumpReferences", "split")<CR>
+  nmap <silent> crv :call CocAction("jumpReferences", "vsplit")<CR>
+  nmap <silent> crt :call CocAction("jumpReferences", "tabe")<CR>
+  nnoremap <silent> K :call <SID>show_documentation()<CR>
+  function! s:show_documentation()
+    if (index(["vim","help"], &filetype) >= 0)
+      execute "h ".expand("<cword>")
+    elseif (coc#rpc#ready())
+      call CocActionAsync("doHover")
+    else
+      execute "!" . &keywordprg . " " . expand("<cword>")
+    endif
+  endfunction
+'''
+# "coc.nvim": {
+#   "lazy": 0,
+#   "rev": "release",
+#   "name": "coc.nvim",
+#   "build": "  git checkout release\n",
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/neoclide/coc.nvim_release",
+#   "repo": "neoclide/coc.nvim",
+#   "merged": 0,
+#   "normalized_name": "coc",
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/neoclide/coc.nvim_release",
+#   "sourced": 1,
+#   "hook_add": "  \" 環境移行をしやすい様に、インストールしたいextensionsを指定\n  let g:coc_global_extensions = [ 'coc-json', 'coc-yaml', 'coc-toml', 'coc-emmet', 'coc-html', 'coc-css', 'coc-sh', 'coc-sql', 'coc-graphql', 'coc-vimlsp', 'coc-python', 'coc-rls', 'coc-solargraph', 'coc-tsserver', 'coc-eslint', 'coc-go', ]\n  \" ポップアップウィンドウのスクロール\n  \" 第一引数でスクロール方向、第二引数で行数、第二引数がなければページ単位のスクロール\n  nnoremap <nowait><expr> <C-n> coc#float#has_scroll() ? coc#float#scroll(1, 1) : \"\\<C-n>\"\n  nnoremap <nowait><expr> <C-p> coc#float#has_scroll() ? coc#float#scroll(0, 1) : \"\\<C-p>\"\n  inoremap <nowait><expr> <C-n> coc#float#has_scroll() ? \"\\<c-r>=coc#float#scroll(1, 1)\\<cr>\" : \"\\<Down>\"\n  inoremap <nowait><expr> <C-p> coc#float#has_scroll() ? \"\\<c-r>=coc#float#scroll(0, 1)\\<cr>\" : \"\\<Up>\"\n  \" nmap <silent> cd <Plug>(coc-definition)\n  nmap <silent> cdx :call CocAction('jumpDefinition', 'split')<CR>\n  nmap <silent> cdv :call CocAction('jumpDefinition', 'vsplit')<CR>\n  nmap <silent> cdt :call CocAction('jumpDefinition', 'tabe')<CR>\n  nmap <silent> ct <Plug>(coc-type-definition)\n  \" nmap <silent> ci <Plug>(coc-implementation)\n  nmap <silent> cr <Plug>(coc-references)\n\n  nnoremap <silent> K :call <SID>show_documentation()<CR>\n  function! s:show_documentation()\n    if (index(['vim','help'], &filetype) >= 0)\n      execute 'h '.expand('<cword>')\n    elseif (coc#rpc#ready())\n      call CocActionAsync('doHover')\n    else\n      execute '!' . &keywordprg . \" \" . expand('<cword>')\n    endif\n  endfunction\n"
+# },
+# "coc.nvim":{
+#   lazy:0,
+#   rev:"release",
+#   name:"coc.nvim",
+#   build:"  git checkout release\n",
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/neoclide/coc.nvim_release",
+#   repo:"neoclide/coc.nvim",
+#   merged:0,normalized_name:"coc",
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/neoclide/coc.nvim_release",
+#   sourced:1,
+  # hook_add:"  \" 環境移行をしやすい様に、インストールしたいextensionsを指定\n  let g:coc_global_extensions = [ 'coc-json', 'coc-yaml', 'coc-toml', 'coc-emmet', 'coc-html', 'coc-css', 'coc-sh', 'coc-sql', 'coc-graphql', 'coc-vimlsp', 'coc-python', 'coc-rls', 'coc-solargraph', 'coc-tsserver', 'coc-eslint', 'coc-go', ]\n  \" ポップアップウィンドウのスクロール\n  \" 第一引数でスクロール方向、第二引数で行数、第二引数がなければページ単位のスクロール\n  nnoremap <nowait><expr> <C-n> coc#float#has_scroll() ? coc#float#scroll(1, 1) : \"\\<C-n>\"\n  nnoremap <nowait><expr> <C-p> coc#float#has_scroll() ? coc#float#scroll(0, 1) : \"\\<C-p>\"\n  inoremap <nowait><expr> <C-n> coc#float#has_scroll() ? \"\\<c-r>=coc#float#scroll(1, 1)\\<cr>\" : \"\\<Down>\"\n  inoremap <nowait><expr> <C-p> coc#float#has_scroll() ? \"\\<c-r>=coc#float#scroll(0, 1)\\<cr>\" : \"\\<Up>\"\n  \" nmap <silent> cd <Plug>(coc-definition)\n  nmap <silent> cdx :call CocAction('jumpDefinition', 'split')<CR>\n  nmap <silent> cdv :call CocAction('jumpDefinition', 'vsplit')<CR>\n  nmap <silent> cdt :call CocAction('jumpDefinition', 'tabe')<CR>\n  nmap <silent> ct <Plug>(coc-type-definition)\n  \" nmap <silent> ci <Plug>(coc-implementation)\n  nmap <silent> cr <Plug>(coc-references)\n\n  nnoremap <silent> K :call <SID>show_documentation()<CR>\n  function! s:show_documentation()\n    if (index(['vim','help'], &filetype) >= 0)\n      execute 'h '.expand('<cword>')\n    elseif (coc#rpc#ready())\n      call CocActionAsync('doHover')\n    else\n      execute '!' . &keywordprg . \" \" . expand('<cword>')\n    endif\n  endfunction\n"
+# },

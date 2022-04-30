@@ -1,0 +1,6 @@
+[[plugins]]
+repo = 'mechatroner/rainbow_csv'
+hook_add = '''
+  nmap <silent> csvh :RainbowDelim<CR>
+  nmap <silent> csvnh :NoRainbowDelim<CR>
+'''

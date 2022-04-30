@@ -1,1 +1,7 @@
-.DS_Store
+.DS_STore
+*.swp
+tags
+tags.lock
+mutagen-compose.yml
+docker-compose.override.yml
+memo.md

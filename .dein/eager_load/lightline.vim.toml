@@ -1,0 +1,44 @@
+[[plugins]]
+repo = "itchyny/lightline.vim"
+hook_add = '''
+  set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+  let g:lightline = {
+        \ 'colorscheme': 'wombat',
+        \ 'active': {
+          \ 'left': [
+            \ [ 'mode', 'paste' ],
+            \ [ 'readonly', 'relativepath', 'modified' ],
+            \ [ 'gitbranch' ],
+            \ [ 'cocstatus' ],
+          \ ],
+        \ },
+        \ 'component_function': {
+          \ 'cocstatus': 'coc#status',
+          \ 'gitbranch': 'FugitiveHead',
+        \ },
+      \ }
+'''
+# "lightline.vim": {
+#   "lazy": 0,
+#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/itchyny/lightline.vim",
+#   "name": "lightline.vim",
+#   "repo": "itchyny/lightline.vim",
+#   "hook_add": "  set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}\n  let g:lightline = { 'colorscheme': 'wombat', 'active': {   'left': [ [ 'mode', 'paste' ],             [ 'readonly', 'relativepath', 'modified' ],             [ 'gitbranch' ],             [ 'cocstatus' ] ] }, 'component_function': {   'cocstatus': 'coc#status',   'gitbranch': 'FugitiveHead' }, }\n",
+#   "merged": 1,
+#   "normalized_name": "lightline",
+#   "type": "git",
+#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/itchyny/lightline.vim",
+#   "sourced": 1
+# },
+# "lightline.vim":{
+#   lazy:0,
+#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/itchyny/lightline.vim",
+#   name:"lightline.vim",
+#   repo:"itchyny/lightline.vim",
+#   hook_add:"  set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}\n  let g:lightline = { 'colorscheme': 'wombat', 'active': {   'left': [ [ 'mode', 'paste' ],             [ 'readonly', 'relativepath', 'modified' ],             [ 'gitbranch' ],             [ 'cocstatus' ] ] }, 'component_function': {   'cocstatus': 'coc#status',   'gitbranch': 'FugitiveHead' }, }\n",
+#   merged:1,
+#   normalized_name:"lightline",
+#   type:"git",
+#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/itchyny/lightline.vim",
+#   sourced:1
+# },

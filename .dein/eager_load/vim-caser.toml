@@ -1,0 +1,14 @@
+[[plugins]]
+repo = "arthurxavierx/vim-caser"
+# gsm: MixedCase
+# gsp: PascalCase
+# gsc: camelCase
+# gs_: snake_case
+# gsu: UPPER_CASE
+# gst: Title Case
+# gss: Sentence case
+# gs<space>: space case
+# gs-: dash-case
+# gsk: kebab-case
+# gsK: Title-Dash-Case / Title-Kebab-Case
+# gs.: dot.case

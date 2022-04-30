@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+current_branch = `git rev-parse --abbrev-ref HEAD`.chomp
+if current_branch =~ /^(?:.+\/)?([A-Z]+-\d+|[a-z0-9]+?|CU-[a-z0-9]+?)-.+/
+  ticket_id = Regexp.last_match[1]
+  commit_msgs = File.readlines(ARGV[0])
+  open(ARGV[0], 'w') {|file|
+    file.print ticket_id.include?('-') ? "[#{ticket_id}] " : "[##{ticket_id}] "
+    file.puts commit_msgs
+  } unless commit_msgs.join =~ /(\[#{ticket_id}\]|\[##{ticket_id}\])/
+end
