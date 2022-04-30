@@ -77,14 +77,17 @@ ln -snf $absolute_path_for_vim ~/
 # vim coc.nvim
 relative_path_for_vim_coc="$(dirname $0)/coc-settings.json"
 absolute_path_for_vim_coc="$(pwd)${relative_path_for_vim_coc:1}"
+mkdir -p ~/.vim
 ln -snf $absolute_path_for_vim_coc ~/.vim/
 
 # neovim
 relative_path_for_neovim="$(dirname $0)/.vimrc"
 absolute_path_for_neovim="$(pwd)${relative_path_for_neovim:1}"
+mkdir -p ~/.config/nvim
 ln -snf $absolute_path_for_neovim ~/.config/nvim/init.vim
 
 # neovim coc.nvim
 relative_path_for_neovim_coc="$(dirname $0)/coc-settings.json"
 absolute_path_for_neovim_coc="$(pwd)${relative_path_for_neovim_coc:1}"
+mkdir -p ~/.config/nvim
 ln -snf $absolute_path_for_neovim_coc ~/.config/nvim/
