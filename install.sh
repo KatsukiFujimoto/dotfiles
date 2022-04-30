@@ -49,6 +49,11 @@ relative_path_for_rectangle="$(dirname $0)/com.knollsoft.Rectangle.plist"
 absolute_path_for_rectangle="$(pwd)${relative_path_for_rectangle:1}"
 ln -snf $absolute_path_for_rectangle ~/Library/Preferences/
 
+# hyperswitch
+relative_path_for_hyperswitch="$(dirname $0)/com.bahoom.HyperSwitch.plist"
+absolute_path_for_hyperswitch="$(pwd)${relative_path_for_hyperswitch:1}"
+ln -snf $absolute_path_for_hyperswitch ~/Library/Preferences/
+
 # git_template
 relative_path_for_git_template="$(dirname $0)/git_template"
 absolute_path_for_git_template="$(pwd)${relative_path_for_git_template:1}"
