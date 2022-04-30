@@ -54,6 +54,11 @@ relative_path_for_hyperswitch="$(dirname $0)/com.bahoom.HyperSwitch.plist"
 absolute_path_for_hyperswitch="$(pwd)${relative_path_for_hyperswitch:1}"
 ln -snf $absolute_path_for_hyperswitch ~/Library/Preferences/
 
+# alfred
+relative_path_for_alfred="$(dirname $0)/com.runningwithcrayons.Alfred-Preferences.plist"
+absolute_path_for_alfred="$(pwd)${relative_path_for_alfred:1}"
+ln -snf $absolute_path_for_alfred ~/Library/Preferences/
+
 # git_template
 relative_path_for_git_template="$(dirname $0)/git_template"
 absolute_path_for_git_template="$(pwd)${relative_path_for_git_template:1}"
