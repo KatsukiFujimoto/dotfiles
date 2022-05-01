@@ -93,9 +93,6 @@ if [ -f '/Users/fujimotokatsuki/google-cloud-sdk/completion.zsh.inc' ]; then . '
 # ===== fzf =====
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# ===== lazydocker ======
-alias lzd='lazydocker'
-
 # ==== asdf ====
 . /usr/local/opt/asdf/libexec/asdf.sh
 
