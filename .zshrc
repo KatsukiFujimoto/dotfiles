@@ -31,7 +31,7 @@ export TERM=screen-256color
 set termguicolors
 
 # ===== git completion =====
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+[ -f ~/.zsh/git-completion.bash ] && zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 
 # FPATHに`~/.zsh`を追加
 fpath=(~/.zsh $fpath)
@@ -40,7 +40,7 @@ fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit -i
 
 # ===== git prompt =====
-source ~/.zsh/git-prompt.sh
+[ -f ~/.zsh/git-prompt.sh ] && source ~/.zsh/git-prompt.sh
 
 # プロンプトに各種情報を表示
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -78,10 +78,10 @@ setopt hist_ignore_dups
 setopt share_history
 
 # ===== GitHub CLI comepletion =====
-eval "$(gh completion -s zsh)"
+which gh 1> /dev/null && eval "$(gh completion -s zsh)"
 
 # ===== Kubernetes completion =====
-source <(kubectl completion zsh)
+which kubectl 1> /dev/null && source <(kubectl completion zsh)
 
 # ===== Google Cloud SDK =====
 # The next line updates PATH for the Google Cloud SDK.
@@ -94,12 +94,15 @@ if [ -f '/Users/fujimotokatsuki/google-cloud-sdk/completion.zsh.inc' ]; then . '
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # ==== asdf ====
-. /usr/local/opt/asdf/libexec/asdf.sh
+which asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
 
 # ==== tmux =====
 # SHELL LOGIN WITH TMUX / If not running interactively, do not do anything
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+if which tmux 1> /dev/null
+then
+  [[ $- != *i* ]] && return
+  [[ -z "$TMUX" ]] && exec tmux
+fi
 
 # ===== Starship =====
-eval "$(starship init zsh)"
+which starship 1> /dev/null && eval "$(starship init zsh)"
