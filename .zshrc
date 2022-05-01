@@ -41,10 +41,10 @@ which kubectl 1> /dev/null && source <(kubectl completion zsh)
 
 # Google Cloud SDK
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/fujimotokatsuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/fujimotokatsuki/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/fujimotokatsuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/fujimotokatsuki/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
