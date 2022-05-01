@@ -14,6 +14,9 @@ setopt hist_ignore_dups
 # 同時に起動したzsh間でヒストリーを共有
 setopt share_history
 
+# CLIのカラー設定
+export CLICOLOR=1
+
 # colorsをロード
 autoload -Uz colors
 colors
