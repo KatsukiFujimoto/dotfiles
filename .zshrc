@@ -101,8 +101,5 @@ if [ -f '/Users/fujimotokatsuki/google-cloud-sdk/completion.zsh.inc' ]; then . '
 [[ $- != *i* ]] && return
 [[ -z "$TMUX" ]] && exec tmux
 
-# ===== rustup =====
-PATH=$HOME/.cargo/bin:$PATH
-
 # ===== Starship =====
 eval "$(starship init zsh)"
