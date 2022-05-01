@@ -23,7 +23,7 @@ autoload -Uz compinit && compinit -i
 # autoloadの探索パスに自動補完処理を置いている~/.zshを追加
 fpath=(~/.zsh $fpath)
 
-# NeoVim checkhealth
+# colorの設定
 export TERM=screen-256color
 set termguicolors
 
