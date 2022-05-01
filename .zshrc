@@ -21,7 +21,6 @@ cf() {
   dir=$(find . -maxdepth ${1:-3} -type d | fzf) &&
   cd "$dir"
 }
-alias mdc='mutagen compose'
 
 # 色を使用出来るようにする
 autoload -Uz colors
