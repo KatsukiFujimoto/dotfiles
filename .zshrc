@@ -42,29 +42,6 @@ autoload -Uz compinit && compinit -i
 # ===== git prompt =====
 [ -f ~/.zsh/git-prompt.sh ] && source ~/.zsh/git-prompt.sh
 
-# プロンプトに各種情報を表示
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWUPSTREAM=1
-GIT_PS1_SHOWUNTRACKEDFILES=
-GIT_PS1_SHOWSTASHSTATE=1
-
-# ターミナルのコマンド受付状態の表示変更
-# \u ユーザ名
-# \h ホスト名
-# \W カレントディレクトリ
-# \w カレントディレクトリのパス
-# \n 改行
-# \d 日付
-# \[ 表示させない文字列の開始
-# \] 表示させない文字列の終了
-# \$ $
-
-setopt PROMPT_SUBST ; PS1='[%B%F{red}%n:%F{green}%~%f]%F{cyan}$(__git_ps1 "(%s)")%f
-%F{yellow}$%f '
-# setopt PROMPT_SUBST ; PS1='
-# [%B%F{red}%n@%m%f%b:%F{green}%~%f]%F{cyan}$(__git_ps1 "(%s)")%f
-# %F{yellow}$%f '
-
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
