@@ -112,3 +112,11 @@ fi
 # mac input speed
 defaults read -g InitialKeyRepeat -eq 11 || defaults write -g InitialKeyRepeat -int 11
 defaults read -g KeyRepeat -eq 1 || defaults write -g KeyRepeat -int 1
+
+# asdf
+asdf plugin add ruby
+asdf plugin add rust
+asdf plugin add python
+asdf plugin add nodejs
+asdf plugin add golang
+asdf plugin update --all

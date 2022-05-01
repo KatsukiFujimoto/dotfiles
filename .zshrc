@@ -31,12 +31,6 @@ colors
 export TERM=screen-256color
 set termguicolors
 
-# ===== Pyenv =====
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 # ===== git completion =====
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 
@@ -100,16 +94,11 @@ if [ -f '/Users/fujimotokatsuki/google-cloud-sdk/completion.zsh.inc' ]; then . '
 # ===== fzf =====
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# ===== rbenv =====
-[[ -d ~/.rbenv  ]] && \
-  export PATH=${HOME}/.rbenv/bin:${PATH} && \
-  eval "$(rbenv init -)"
-
 # ===== lazydocker ======
 alias lzd='lazydocker'
 
-# ==== nodebrew =====
-PATH=$HOME/.nodebrew/current/bin:$PATH
+# ==== asdf ====
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # ==== tmux =====
 # SHELL LOGIN WITH TMUX / If not running interactively, do not do anything
