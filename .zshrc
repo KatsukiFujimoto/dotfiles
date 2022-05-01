@@ -105,9 +105,6 @@ alias lzd='lazydocker'
 [[ $- != *i* ]] && return
 [[ -z "$TMUX" ]] && exec tmux
 
-# ==== terraform-lsp ====
-export PATH=$PATH:~/.bin
-
 # ===== rustup =====
 PATH=$HOME/.cargo/bin:$PATH
 
