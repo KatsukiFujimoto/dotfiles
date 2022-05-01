@@ -3,8 +3,6 @@ alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin br
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-# ===== My Commands =====
-export PATH=$HOME/my_commands:$PATH
 ch() {
   cd ~
 }
