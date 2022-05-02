@@ -1,27 +1,3 @@
 [[plugins]]
 repo = "junegunn/fzf.vim"
 depends =  ["fzf"]
-# "fzf.vim": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf.vim",
-#   "depends": ["fzf"],
-#   "name": "fzf.vim",
-#   "normalized_name": "fzf",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf.vim",
-#   "sourced": 1,
-#   "repo": "junegunn/fzf.vim"
-# },
-# "fzf.vim":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf.vim",
-#   depends:["fzf"],
-#   name:"fzf.vim",
-#   normalized_name:"fzf",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/fzf.vim",
-#   sourced:1,
-#   repo:"junegunn/fzf.vim"
-# },

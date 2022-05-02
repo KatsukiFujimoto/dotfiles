@@ -2,27 +2,3 @@
 repo = "cespare/vim-toml"
 merge = 0
 on_ft = ["toml"]
-# "vim-toml": {
-#   "lazy": 1,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/cespare/vim-toml",
-#   "repo": "cespare/vim-toml",
-#   "normalized_name": "toml",
-#   "merged": 0,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/cespare/vim-toml",
-#   "sourced": 0,
-#   "on_ft": ["toml"],
-#   "name": "vim-toml"
-# },
-# "vim-toml":{
-#   lazy:1,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/cespare/vim-toml",
-#   repo:"cespare/vim-toml",
-#   normalized_name:"toml",
-#   merged:0,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/cespare/vim-toml",
-#   sourced:0,
-#   on_ft:["toml"],
-#   name:"vim-toml"
-# },

@@ -30,27 +30,3 @@ hook_add = '''
   " nmap <silent> <C-h> <Plug>(ale_previous_wrap)
   " nmap <silent> <C-l> <Plug>(ale_next_wrap)\n
 '''
-# "ale": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/dense-analysis/ale",
-#   "name": "ale",
-#   "repo": "dense-analysis/ale",
-#   "hook_add": "  let g:ale_linters = { 'javascript': ['eslint'] }\n  let g:ale_fixers = {  '*': ['remove_trailing_lines', 'trim_whitespace'],  'javascript': ['eslint'] }\n  let g:ale_disable_lsp = 1\n  \" Vim起動時にALEをOFFにする設定\n  let g:ale_lint_on_enter = 0\n  let g:ale_fix_on_enter = 0\n  \" テキスト編集時に実行\n  let g:ale_lint_on_text_changed = 0\n  let g:ale_lint_on_insert_leave = 0\n  \" 保存時に実行\n  let g:ale_fix_on_save = 1\n  \" CPU使用率を下げるために指定したlinter以外は実行しないように\n  let g:ale_linters_explicit = 1\n  let g:ale_sign_error = ''\n  let g:ale_sign_warning = ''\n  let g:airline#extensions#ale#open_lnum_symbol = '('\n  let g:airline#extensions#ale#close_lnum_symbol = ')'\n  let g:ale_echo_msg_format = '[%linter%]%code: %%s'\n  highlight link ALEErrorSign Tag\n  highlight link ALEWarningSign StorageClass\n  \" Ctrl + kで次の指摘へ、Ctrl + jで前の指摘へ移動\n  \" nmap <silent> <C-h> <Plug>(ale_previous_wrap)\n  \" nmap <silent> <C-l> <Plug>(ale_next_wrap)\n",
-#   "merged": 1,
-#   "normalized_name": "ale",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/dense-analysis/ale",
-#   "sourced": 1
-# },
-# ale:{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/dense-analysis/ale",
-#   name:"ale",
-#   repo:"dense-analysis/ale",
-#   hook_add:"  let g:ale_linters = { 'javascript': ['eslint'] }\n  let g:ale_fixers = {  '*': ['remove_trailing_lines', 'trim_whitespace'],  'javascript': ['eslint'] }\n  let g:ale_disable_lsp = 1\n  \" Vim起動時にALEをOFFにする設定\n  let g:ale_lint_on_enter = 0\n  let g:ale_fix_on_enter = 0\n  \" テキスト編集時に実行\n  let g:ale_lint_on_text_changed = 0\n  let g:ale_lint_on_insert_leave = 0\n  \" 保存時に実行\n  let g:ale_fix_on_save = 1\n  \" CPU使用率を下げるために指定したlinter以外は実行しないように\n  let g:ale_linters_explicit = 1\n  let g:ale_sign_error = ''\n  let g:ale_sign_warning = ''\n  let g:airline#extensions#ale#open_lnum_symbol = '('\n  let g:airline#extensions#ale#close_lnum_symbol = ')'\n  let g:ale_echo_msg_format = '[%linter%]%code: %%s'\n  highlight link ALEErrorSign Tag\n  highlight link ALEWarningSign StorageClass\n  \" Ctrl + kで次の指摘へ、Ctrl + jで前の指摘へ移動\n  \" nmap <silent> <C-h> <Plug>(ale_previous_wrap)\n  \" nmap <silent> <C-l> <Plug>(ale_next_wrap)\n",
-#   merged:1,
-#   normalized_name:"ale",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/dense-analysis/ale",
-#   sourced:1
-# },

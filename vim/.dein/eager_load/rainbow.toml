@@ -3,27 +3,3 @@ repo = "luochen1990/rainbow"
 hook_add = '''
   let g:rainbow_active = 1
 '''
-# "rainbow": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/luochen1990/rainbow",
-#   "name": "rainbow",
-#   "repo": "luochen1990/rainbow",
-#   "hook_add": "  let g:rainbow_active = 1\n",
-#   "merged": 1,
-#   "normalized_name": "rainbow",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/luochen1990/rainbow",
-#   "sourced": 1
-# },
-# rainbow:{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/luochen1990/rainbow",
-#   name:"rainbow",
-#   repo:"luochen1990/rainbow",
-#   hook_add:"  let g:rainbow_active = 1\n",
-#   merged:1,
-#   normalized_name:"rainbow",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/luochen1990/rainbow",
-#   sourced:1
-# },

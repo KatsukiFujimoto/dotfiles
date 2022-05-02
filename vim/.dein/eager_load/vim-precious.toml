@@ -1,24 +1,2 @@
 [[plugins]]
 repo = "osyo-manga/vim-precious"
-# "vim-precious": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/osyo-manga/vim-precious",
-#   "repo": "osyo-manga/vim-precious",
-#   "normalized_name": "precious",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/osyo-manga/vim-precious",
-#   "sourced": 1,
-#   "name": "vim-precious"
-# },
-# "vim-precious":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/osyo-manga/vim-precious",
-#   repo:"osyo-manga/vim-precious",
-#   normalized_name:"precious",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/osyo-manga/vim-precious",
-#   sourced:1,
-#   name:"vim-precious"
-# },

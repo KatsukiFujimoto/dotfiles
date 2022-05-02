@@ -15,26 +15,3 @@ repo = "tpope/vim-surround"
 
 # メモ
 # {や[だとスペースを含むが、}や]だとスペースを含まない
-
-# "vim-surround": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
-#   "repo": "tpope/vim-surround",
-#   "normalized_name": "surround",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
-#   "sourced": 1,
-#   "name": "vim-surround"
-# },
-# "vim-surround":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
-#   repo:"tpope/vim-surround",
-#   normalized_name:"surround",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-surround",
-#   sourced:1,
-#   name:"vim-surround"
-# },

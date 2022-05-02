@@ -1,24 +1,2 @@
 [[plugins]]
 repo = "lambdalisue/fern-git-status.vim"
-# "fern-git-status.vim": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern-git-status.vim",
-#   "repo": "lambdalisue/fern-git-status.vim",
-#   "normalized_name": "fern-git-status",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern-git-status.vim",
-#   "sourced": 1,
-#   "name": "fern-git-status.vim"
-# },
-# "fern-git-status.vim":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern-git-status.vim",
-#   repo:"lambdalisue/fern-git-status.vim",
-#   normalized_name:"fern-git-status",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern-git-status.vim",
-#   sourced:1,
-#   name:"fern-git-status.vim"
-# },

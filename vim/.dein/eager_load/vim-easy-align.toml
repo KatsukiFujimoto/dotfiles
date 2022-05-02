@@ -3,27 +3,3 @@ repo = "junegunn/vim-easy-align"
 hook_add = '''
   xmap ga <Plug>(EasyAlign)
 '''
-# "vim-easy-align": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/vim-easy-align",
-#   "name": "vim-easy-align",
-#   "repo": "junegunn/vim-easy-align",
-#   "hook_add": "  xmap ga <Plug>(EasyAlign)\n",
-#   "merged": 1,
-#   "normalized_name": "easy-align",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/vim-easy-align",
-#   "sourced": 1
-# },
-# "vim-easy-align":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/vim-easy-align",
-#   name:"vim-easy-align",
-#   repo:"junegunn/vim-easy-align",
-#   hook_add:"  xmap ga <Plug>(EasyAlign)\n",
-#   merged:1,
-#   normalized_name:"easy-align",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/junegunn/vim-easy-align",
-#   sourced:1
-# },

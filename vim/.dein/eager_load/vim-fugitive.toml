@@ -9,27 +9,3 @@ hook_add = '''
   noremap <leader>gl :Glog<CR>
   noremap <leader>gb :Gblame<CR>
 '''
-# "vim-fugitive": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-fugitive",
-#   "name": "vim-fugitive",
-#   "repo": "tpope/vim-fugitive",
-#   "hook_add": "  noremap <leader>ga :Git add %:p<CR><CR>\n  noremap <leader>gc :Gcommit<CR><CR>\n  noremap <leader>gs :Gstatus<CR>\n  noremap <leader>gp :Gpush<CR>\n  noremap <leader>gd :Gdiff<CR>\n  noremap <leader>gl :Glog<CR>\n  noremap <leader>gb :Gblame<CR>\n",
-#   "merged": 1,
-#   "normalized_name": "fugitive",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-fugitive",
-#   "sourced": 1
-# },
-# "vim-fugitive":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-fugitive",
-#   name:"vim-fugitive",
-#   repo:"tpope/vim-fugitive",
-#   hook_add:"  noremap <leader>ga :Git add %:p<CR><CR>\n  noremap <leader>gc :Gcommit<CR><CR>\n  noremap <leader>gs :Gstatus<CR>\n  noremap <leader>gp :Gpush<CR>\n  noremap <leader>gd :Gdiff<CR>\n  noremap <leader>gl :Glog<CR>\n  noremap <leader>gb :Gblame<CR>\n",
-#   merged:1,
-#   normalized_name:"fugitive",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-fugitive",
-#   sourced:1
-# },

@@ -26,27 +26,3 @@ hook_add = '''
   augroup END
   noremap <C-a> :Fern . -reveal=% -drawer -toggle -width=42<CR>
 '''
-# "fern.vim": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern.vim",
-#   "name": "fern.vim",
-#   "repo": "lambdalisue/fern.vim",
-#   "hook_add": "  let g:fern#mark_symbol                       = '●'\n  let g:fern#renderer#default#collapsed_symbol = '▷ '\n  let g:fern#renderer#default#expanded_symbol  = '▼ '\n  let g:fern#renderer#default#leading          = ' '\n  let g:fern#renderer#default#leaf_symbol      = ' '\n  let g:fern#renderer#default#root_symbol      = '~ '\n  function! s:init_fern() abort\n    nmap <silent> <buffer> <C-v> <Plug>(fern-action-open:vsplit)\n    nmap <silent> <buffer> <C-x> <Plug>(fern-action-open:split)\n    nmap <silent> <buffer> <C-t> <Plug>(fern-action-open:tabedit)\n    \" 下記の既にプラグインメソッドに割り振られているキーマップを変更する場合はそのメソッドへのキーマップを変えた上でやる必要がある\n    nmap <silent> <buffer> <C-b> <Plug>(fern-action-redraw)\n    nmap <silent> <buffer> <C-l> :wincmd l<CR>\n  endfunction\n  augroup fern-custom\n    autocmd! *\n    autocmd FileType fern call s:init_fern()\n  augroup END\n  noremap <C-a> :Fern . -reveal=% -drawer -toggle -width=42<CR>\n",
-#   "merged": 1,
-#   "normalized_name": "fern",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern.vim",
-#   "sourced": 1
-# },
-# "fern.vim":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern.vim",
-#   name:"fern.vim",
-#   repo:"lambdalisue/fern.vim",
-#   hook_add:"  let g:fern#mark_symbol                       = '●'\n  let g:fern#renderer#default#collapsed_symbol = '▷ '\n  let g:fern#renderer#default#expanded_symbol  = '▼ '\n  let g:fern#renderer#default#leading          = ' '\n  let g:fern#renderer#default#leaf_symbol      = ' '\n  let g:fern#renderer#default#root_symbol      = '~ '\n  function! s:init_fern() abort\n    nmap <silent> <buffer> <C-v> <Plug>(fern-action-open:vsplit)\n    nmap <silent> <buffer> <C-x> <Plug>(fern-action-open:split)\n    nmap <silent> <buffer> <C-t> <Plug>(fern-action-open:tabedit)\n    \" 下記の既にプラグインメソッドに割り振られているキーマップを変更する場合はそのメソッドへのキーマップを変えた上でやる必要がある\n    nmap <silent> <buffer> <C-b> <Plug>(fern-action-redraw)\n    nmap <silent> <buffer> <C-l> :wincmd l<CR>\n  endfunction\n  augroup fern-custom\n    autocmd! *\n    autocmd FileType fern call s:init_fern()\n  augroup END\n  noremap <C-a> :Fern . -reveal=% -drawer -toggle -width=42<CR>\n",
-#   merged:1,
-#   normalized_name:"fern",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/lambdalisue/fern.vim",
-#   sourced:1
-# },

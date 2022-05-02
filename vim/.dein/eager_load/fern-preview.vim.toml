@@ -9,28 +9,3 @@ hook_add = '''
     autocmd FileType fern call s:fern_settings()
   augroup END
 '''
-
-# "fern-preview.vim": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuki-yano/fern-preview.vim",
-#   "name": "fern-preview.vim",
-#   "repo": "yuki-yano/fern-preview.vim",
-#   "hook_add": "  function! s:fern_settings() abort\n    nmap <silent> <buffer> p <Plug>(fern-action-preview:toggle)\n  endfunction\n  augroup fern-settings\n    autocmd!\n    autocmd FileType fern call s:fern_settings()\n  augroup END\n",
-#   "merged": 1,
-#   "normalized_name": "fern-preview",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuki-yano/fern-preview.vim",
-#   "sourced": 1
-# },
-# "fern-preview.vim":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuki-yano/fern-preview.vim",
-#   name:"fern-preview.vim",
-#   repo:"yuki-yano/fern-preview.vim",
-#   hook_add:"  function! s:fern_settings() abort\n    nmap <silent> <buffer> p <Plug>(fern-action-preview:toggle)\n  endfunction\n  augroup fern-settings\n    autocmd!\n    autocmd FileType fern call s:fern_settings()\n  augroup END\n",
-#   merged:1,
-#   normalized_name:"fern-preview",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/yuki-yano/fern-preview.vim",
-#   sourced:1
-# },

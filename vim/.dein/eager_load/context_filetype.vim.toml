@@ -1,24 +1,2 @@
 [[plugins]]
 repo = "Shougo/context_filetype.vim"
-# "context_filetype.vim": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/Shougo/context_filetype.vim",
-#   "repo": "Shougo/context_filetype.vim",
-#   "normalized_name": "context_filetype",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/Shougo/context_filetype.vim",
-#   "sourced": 1,
-#   "name": "context_filetype.vim"
-# },
-# "context_filetype.vim":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/Shougo/context_filetype.vim",
-#   repo:"Shougo/context_filetype.vim",
-#   normalized_name:"context_filetype",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/Shougo/context_filetype.vim",
-#   sourced:1,
-#   name:"context_filetype.vim"
-# },

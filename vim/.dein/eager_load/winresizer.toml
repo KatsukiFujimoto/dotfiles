@@ -1,24 +1,2 @@
 [[plugins]]
 repo = "simeji/winresizer"
-# "winresizer": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/simeji/winresizer",
-#   "repo": "simeji/winresizer",
-#   "normalized_name": "winresizer",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/simeji/winresizer",
-#   "sourced": 1,
-#   "name": "winresizer"
-# },
-# winresizer:{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/simeji/winresizer",
-#   repo:"simeji/winresizer",
-#   normalized_name:"winresizer",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/simeji/winresizer",
-#   sourced:1,
-#   name:"winresizer"
-# },

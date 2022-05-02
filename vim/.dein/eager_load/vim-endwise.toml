@@ -1,24 +1,2 @@
 [[plugins]]
 repo = "tpope/vim-endwise"
-# "vim-endwise": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-endwise",
-#   "repo": "tpope/vim-endwise",
-#   "normalized_name": "endwise",
-#   "merged": 1,
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-endwise",
-#   "sourced": 1,
-#   "name": "vim-endwise"
-# },
-# "vim-endwise":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-endwise",
-#   repo:"tpope/vim-endwise",
-#   normalized_name:"endwise",
-#   merged:1,
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/tpope/vim-endwise",
-#   sourced:1,
-#   name:"vim-endwise"
-# },

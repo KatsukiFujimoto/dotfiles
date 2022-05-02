@@ -3,26 +3,3 @@ repo = "reireias/vim-cheatsheet"
 hook_add = '''
   let g:cheatsheet#cheat_file = "~/.vim/cheatsheet.md"
 '''
-# "vim-cheatsheet": {
-#   "lazy": 0,
-#   "path": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/reireias/vim-cheatsheet",
-#   "name": "vim-cheatsheet",
-#   "repo": "reireias/vim-cheatsheet",
-#   "hook_add": "  let g:cheatsheet#cheat_file = '~/.vim/cheatsheet.md'\n",
-#   "merged": 1,
-#   "normalized_name": "cheatsheet",
-#   "type": "git",
-#   "rtp": "/Users/fujimotokatsuki/.cache/dein/repos/github.com/reireias/vim-cheatsheet", "sourced": 1
-# }
-# "vim-cheatsheet":{
-#   lazy:0,
-#   path:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/reireias/vim-cheatsheet",
-#   name:"vim-cheatsheet",
-#   repo:"reireias/vim-cheatsheet",
-#   hook_add:"  let g:cheatsheet#cheat_file = '~/.vim/cheatsheet.md'\n",
-#   merged:1,
-#   normalized_name:"cheatsheet",
-#   type:"git",
-#   rtp:"/Users/fujimotokatsuki/.cache/dein/repos/github.com/reireias/vim-cheatsheet",
-#   sourced:1
-# }
