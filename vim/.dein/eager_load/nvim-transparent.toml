@@ -1,0 +1,10 @@
+[[plugins]]
+repo = "xiyaowong/nvim-transparent"
+hook_add = '''
+  if has("nvim")
+    let g:transparent_enabled = v:true
+  else
+    let g:loaded_transparent = 0
+    let g:transparent_enabled = v:false
+  endif
+'''
