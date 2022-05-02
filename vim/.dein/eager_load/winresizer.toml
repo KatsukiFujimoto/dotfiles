@@ -1,2 +1,17 @@
 [[plugins]]
 repo = "simeji/winresizer"
+
+# ウィンドウ操作モードに入る
+## Ctrl + E
+
+# 操作のモードを変更する
+## r -> resize
+## m -> move
+## f -> focus
+
+# ウィンドウを操作
+## hjkl
+
+# 変更を制御
+## Ctrl+M / Enter -> 決定
+## q -> cancel

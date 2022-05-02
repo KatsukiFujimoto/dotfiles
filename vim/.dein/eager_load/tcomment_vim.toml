@@ -1,2 +1,5 @@
 [[plugins]]
 repo = "tomtom/tcomment_vim"
+
+# カレント行もしくはvisualで指定した行をコメントアウト
+## gcc

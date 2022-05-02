@@ -25,3 +25,10 @@ hook_add = '''
   let g:Fern_mapping_fzf_file_sink = function('s:reveal')
   let g:Fern_mapping_fzf_dir_sink = function('s:reveal')
 '''
+
+# ff	fzf-files
+# fd	fzf-dirs
+# fa	fzf-both
+# frf	fzf-root-files
+# frd	fzf-root-dirs
+# fra	fzf-root-both

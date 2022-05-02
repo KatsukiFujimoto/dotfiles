@@ -1,17 +1,14 @@
 [[plugins]]
 repo = "tpope/vim-surround"
 
-# normal mode
-# csはchange surroundと覚えれば良い
-# cs{変更前のsurround}{変更後のsurround}
-# ds"'
+# normal modeの場合（指定記号を変更したい）
+## cs{変更前}{変更後}
+## 例: cs"'
+## ds{削除対象}
+## 例: ds"
 
-# dsはdelete surroundと覚えれば良い
-# ds(削除対象のsurround)
-# ds"
-
-# visual mode
-# S"
-
-# メモ
-# {や[だとスペースを含むが、}や]だとスペースを含まない
+# visual modeの場合（選択文字列を記号で囲みたい）
+## visualで選択 -> S -> 選択
+## 例: " / '
+## {,[,(などの左側ブラケットだとスペースを含む
+## },],)などの右側ブラケットだとスペースを含まない
