@@ -37,10 +37,10 @@ zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 source ~/.zsh/git-prompt.sh
 
 # GitHub CLI comepletion
-which gh 1> /dev/null && eval "$(gh completion -s zsh)"
+command -v gh 1> /dev/null && eval "$(gh completion -s zsh)"
 
 # Kubernetes completion
-which kubectl 1> /dev/null && source <(kubectl completion zsh)
+command -v kubectl 1> /dev/null && source <(kubectl completion zsh)
 
 # Google Cloud SDK
 # The next line updates PATH for the Google Cloud SDK.
@@ -53,7 +53,7 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf
-which asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
+command -v asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
 
 # tmux
 # SHELL LOGIN WITH TMUX / If not running interactively, do not do anything
@@ -61,7 +61,7 @@ which asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
 [[ -z "$TMUX" ]] && exec tmux
 
 # Starship
-which starship 1> /dev/null && eval "$(starship init zsh)"
+command -v starship 1> /dev/null && eval "$(starship init zsh)"
 
 # My Commands
 ch() {

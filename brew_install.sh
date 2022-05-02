@@ -10,7 +10,7 @@ absolute_path_for() {
 }
 
 # homebrew
-if which brew > /dev/null 2>&1
+if command -v brew > /dev/null 2>&1
   echo "already installed Homebrew"
 then
 else
