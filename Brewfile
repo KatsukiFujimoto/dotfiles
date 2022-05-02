@@ -45,7 +45,6 @@ brew "tree"
 brew "wget"
 brew "yarn"
 
-cask "iterm2"
 cask "ngrok"
 cask "virtualbox"
 cask "vagrant"
@@ -74,6 +73,11 @@ cask "karabiner-elements"
 cask "flameshot"
 cask "docker"
 cask "gitify"
+# terminal
+cask "iterm2"
 cask "alacritty"
+# https://github.com/warpdotdev/Warp
+# https://github.com/wez/wezterm
+# https://github.com/kovidgoyal/kitty
 
 mas "LINE", id: 539883307
