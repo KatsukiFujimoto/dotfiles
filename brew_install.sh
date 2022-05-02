@@ -2,12 +2,15 @@
 
 set -u
 
-# homebrew
-brew_installed() {
-  which brew > /dev/null 2>&1
+relative_dir_path=$(dirname $0)
+absolute_path_for() {
+  relative_path="$relative_dir_path/$1"
+  absolute_path="$(pwd)${relative_path:1}"
+  echo $absolute_path
 }
 
-if brew_installed
+# homebrew
+if which brew > /dev/null 2>&1
   echo "already installed Homebrew"
 then
 else
@@ -25,9 +28,7 @@ echo "upgrading Homebrew"
 brew upgrade
 
 echo "installing applications based on Brewfile"
-relative_path_for_brewfile="$(dirname $0)/brew/Brewfile"
-absolute_path_for_brewfile="$(pwd)${relative_path_for_brewfile:1}"
-brew bundle --file $absolute_path_for_brewfile
+brew bundle --file $(absolute_path_for "brew/Brewfile")
 
 echo "cleaning up Homebrew"
 brew cleanup

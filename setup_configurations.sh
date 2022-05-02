@@ -2,73 +2,55 @@
 
 set -u
 
-# dotfiles in home directory
-DOT_FILES=(
-  zsh/.zshrc
-  git/.gitconfig
-  git/.gitignore
-  vim/.dein
-  ctags/.ctags
-  ripgrep/.rgignore
-  tmux/.tmux.conf
-  alacritty/.alacritty.yml
-)
-for file in ${DOT_FILES[@]}
-do
-  relative_path_for_dot_file="$(dirname $0)/$file"
-  absolute_path_for_dot_file="$(pwd)${relative_path_for_dot_file:1}"
-  ln -snf $absolute_path_for_dot_file ~/
-done
+relative_dir_path=$(dirname $0)
+absolute_path_for() {
+  relative_path="$relative_dir_path/$1"
+  absolute_path="$(pwd)${relative_path:1}"
+  echo $absolute_path
+}
 
 # karabiner
-relative_path_for_karabiner="$(dirname $0)/karabiner/karabiner.json"
-absolute_path_for_karabiner="$(pwd)${relative_path_for_karabiner:1}"
-ln -snf $absolute_path_for_karabiner ~/.config/karabiner/
+ln -snf $(absolute_path_for "karabiner/karabiner.json") ~/.config/karabiner/
 
 # rectangle
-relative_path_for_rectangle="$(dirname $0)/rectangle/com.knollsoft.Rectangle.plist"
-absolute_path_for_rectangle="$(pwd)${relative_path_for_rectangle:1}"
-ln -snf $absolute_path_for_rectangle ~/Library/Preferences/
+ln -snf $(absolute_path_for "rectangle/com.knollsoft.Rectangle.plist") ~/Library/Preferences/
 
 # hyperswitch
-relative_path_for_hyperswitch="$(dirname $0)/hyperswitch/com.bahoom.HyperSwitch.plist"
-absolute_path_for_hyperswitch="$(pwd)${relative_path_for_hyperswitch:1}"
-ln -snf $absolute_path_for_hyperswitch ~/Library/Preferences/
+ln -snf $(absolute_path_for "hyperswitch/com.bahoom.HyperSwitch.plist") ~/Library/Preferences/
 
 # alfred
-relative_path_for_alfred="$(dirname $0)/alfred/com.runningwithcrayons.Alfred-Preferences.plist"
-absolute_path_for_alfred="$(pwd)${relative_path_for_alfred:1}"
-ln -snf $absolute_path_for_alfred ~/Library/Preferences/
+ln -snf $(absolute_path_for "alfred/com.runningwithcrayons.Alfred-Preferences.plist") ~/Library/Preferences/
 
-# git_template
-relative_path_for_git_template="$(dirname $0)/git/git_template"
-absolute_path_for_git_template="$(pwd)${relative_path_for_git_template:1}"
-ln -snf $absolute_path_for_git_template ~/.config/
+# git
+ln -snf $(absolute_path_for "git/.gitconfig") ~/.config/
+ln -snf $(absolute_path_for "git/.gitignore") ~/.config/
+ln -snf $(absolute_path_for "git/git_template") ~/.config/
 
 # iterm2
-relative_path_for_iterm="$(dirname $0)/iterm/com.googlecode.iterm2.plist"
-absolute_path_for_iterm="$(pwd)${relative_path_for_iterm:1}"
-ln -snf $absolute_path_for_iterm ~/Library/Preferences/
+ln -snf $(absolute_path_for "iterm/com.googlecode.iterm2.plist") ~/Library/Preferences/
+
+# zsh
+ln -snf $(absolute_path_for "zsh/.zshrc") ~/
+
+# ctags
+ln -snf $(absolute_path_for "ctags/.ctags") ~/
+
+# ripgrep
+ln -snf $(absolute_path_for "ripgrep/.rgignore") ~/
+
+# tmux
+ln -snf $(absolute_path_for "tmux/.tmux.conf") ~/
+
+# alacritty
+ln -snf $(absolute_path_for "alacritty/.alacritty.yml") ~/
 
 # vim
-relative_path_for_vim="$(dirname $0)/vim/.vimrc"
-absolute_path_for_vim="$(pwd)${relative_path_for_vim:1}"
-ln -snf $absolute_path_for_vim ~/
-
-# vim coc.nvim
-relative_path_for_vim_coc="$(dirname $0)/vim/coc-settings.json"
-absolute_path_for_vim_coc="$(pwd)${relative_path_for_vim_coc:1}"
 mkdir -p ~/.vim
-ln -snf $absolute_path_for_vim_coc ~/.vim/
+ln -snf $(absolute_path_for "vim/.vimrc") ~/
+ln -snf $(absolute_path_for "vim/.dein") ~/.vim/
+ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.vim/
 
 # neovim
-relative_path_for_neovim="$(dirname $0)/vim/.vimrc"
-absolute_path_for_neovim="$(pwd)${relative_path_for_neovim:1}"
 mkdir -p ~/.config/nvim
-ln -snf $absolute_path_for_neovim ~/.config/nvim/init.vim
-
-# neovim coc.nvim
-relative_path_for_neovim_coc="$(dirname $0)/vim/coc-settings.json"
-absolute_path_for_neovim_coc="$(pwd)${relative_path_for_neovim_coc:1}"
-mkdir -p ~/.config/nvim
-ln -snf $absolute_path_for_neovim_coc ~/.config/nvim/
+ln -snf $(absolute_path_for "vim/.vimrc") ~/.config/nvim/init.vim
+ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.config/nvim/
