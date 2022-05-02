@@ -1,0 +1,5 @@
+[[plugins]]
+repo = "lambdalisue/fern-renderer-nerdfont.vim"
+hook_add = '''
+  let g:fern#renderer = "nerdfont"
+'''

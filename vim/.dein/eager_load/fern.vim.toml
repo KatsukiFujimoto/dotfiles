@@ -5,12 +5,6 @@ hook_add = '''
   " let g:fern#disable_default_mappings = 1
   " 隠しファイルの表示
   let g:fern#default_hidden=1
-  let g:fern#mark_symbol                       = "●"
-  let g:fern#renderer#default#collapsed_symbol = "▷ "
-  let g:fern#renderer#default#expanded_symbol  = "▼ "
-  let g:fern#renderer#default#leading          = " "
-  let g:fern#renderer#default#leaf_symbol      = " "
-  let g:fern#renderer#default#root_symbol      = "~ "
   function! s:init_fern() abort
     nmap <silent> <buffer> <C-v> <Plug>(fern-action-open:vsplit)
     nmap <silent> <buffer> <C-x> <Plug>(fern-action-open:split)
@@ -19,6 +13,9 @@ hook_add = '''
     " そのメソッドへのキーマップを変えた上でやる必要がある
     nmap <silent> <buffer> <C-b> <Plug>(fern-action-redraw)
     nmap <silent> <buffer> <C-l> :wincmd l<CR>
+    " ディレクトリのアイコンが緑色、ディレクトリ名が赤色になってしまうので上書き
+    highlight Directory ctermfg=8 ctermbg=NONE cterm=NONE guifg=#6B7089 guibg=NONE gui=NONE
+    highlight FernBranchText ctermfg=8 ctermbg=NONE cterm=NONE guifg=#bbbfc7 guibg=NONE gui=NONE
   endfunction
   augroup fern-custom
     autocmd! *

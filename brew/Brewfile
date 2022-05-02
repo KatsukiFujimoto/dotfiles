@@ -75,6 +75,7 @@ cask "karabiner-elements"
 cask "flameshot"
 cask "docker"
 cask "gitify"
+cask "homebrew/cask-fonts/font-meslo-lg-nerd-font"
 # terminal
 cask "iterm2"
 cask "alacritty"

@@ -22,6 +22,15 @@ scrolling:
   multiplier: 3 # scroll lines at once
 
 font:
+  normal:
+      family: MesloLGL Nerd Font
+      style: Regular
+  bold:
+      family: MesloLGL Nerd Font
+      style: Bold
+  italic:
+      family: MesloLGL Nerd Font
+      style: Italic
   size: 12.0
 
 # Colors (Molokai Dark)

@@ -1731,6 +1731,18 @@
         "options": {
           "full_name": "alacritty"
         }
+      },
+      "font-mononoki-nerd-font": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "homebrew/cask-fonts/font-mononoki-nerd-font"
+        }
+      },
+      "font-meslo-lg-nerd-font": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "homebrew/cask-fonts/font-meslo-lg-nerd-font"
+        }
       }
     },
     "mas": {
@@ -1745,7 +1757,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.4.10",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "cb530cebe93f9bff2ce546e3e5602cf5a1f5a2fd",
+        "Homebrew/homebrew-core": "2653bd2cd5ed869ce6ffd0e2b7331809db5b1a3c",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.2.1",
         "macOS": "11.4"

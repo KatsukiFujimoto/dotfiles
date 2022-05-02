@@ -1,0 +1,8 @@
+[[plugins]]
+repo = "lambdalisue/glyph-palette.vim"
+hook_add = '''
+  augroup my-glyph-palette
+    autocmd! *
+    autocmd FileType fern call glyph_palette#apply()
+  augroup END
+'''
