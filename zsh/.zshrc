@@ -14,21 +14,16 @@ setopt hist_ignore_dups
 # 同時に起動したzsh間でヒストリーを共有
 setopt share_history
 
-# CLIのカラー設定
+# カラー設定
 export CLICOLOR=1
-
-# colorsをロード
-autoload -Uz colors
-colors
+export TERM=screen-256color
+set termguicolors
+autoload -Uz colors && colors
 
 # 自動補完をロード
 autoload -Uz compinit && compinit -i
 # autoloadの探索パスに自動補完処理を置いている~/.zshを追加
 fpath=(~/.zsh $fpath)
-
-# colorの設定
-export TERM=screen-256color
-set termguicolors
 
 # git completion
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
