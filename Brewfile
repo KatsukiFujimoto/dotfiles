@@ -74,5 +74,6 @@ cask "karabiner-elements"
 cask "flameshot"
 cask "docker"
 cask "gitify"
+cask "alacritty"
 
 mas "LINE", id: 539883307

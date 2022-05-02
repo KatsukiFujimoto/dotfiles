@@ -31,7 +31,7 @@ echo "cleaning up Homebrew"
 brew cleanup
 
 # dotfiles in home directory
-DOT_FILES=(.zshrc .gitconfig .gitignore .dein .ctags .rgignore .tmux.conf)
+DOT_FILES=(.zshrc .gitconfig .gitignore .dein .ctags .rgignore .tmux.conf .alacritty.yml)
 for file in ${DOT_FILES[@]}
 do
   relative_path_for_dot_file="$(dirname $0)/$file"
