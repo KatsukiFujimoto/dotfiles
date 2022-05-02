@@ -2,10 +2,6 @@
 if &compatible
   set nocompatible
 endif
-" Reset autocmd
-augroup MyAutoCmd
-  autocmd!
-augroup END
 " <Leader>キーの割り当て
 let mapleader = "\<Space>"
 " Neovimで英語表示にする
@@ -27,43 +23,28 @@ if has('nvim')
 else
   let s:dein_dir = expand('~/.cache/dein/vim')
 endif
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim' " dein.vimの実態があるディレクトリをセット
+" dein.vimの実態があるディレクトリをセット
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 " dein.vimがインストールされていない場合はインストール
 if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
   endif
 
-  " execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
   execute 'set runtimepath^=' . s:dein_repo_dir
 endif
 
+" プラグインの読み込みとキャッシュ
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  " dein.toml, dein_lazy.tomlファイルのあるディレクトリをセット
-  " if has('nvim')
-  "   let s:toml_dir  = expand('~/.nvim')
-  " else
-  "   let s:toml_dir  = expand('~/.vim')
-  " end
-  " let s:toml      = s:toml_dir . '/dein.toml'
-  " let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
-
   for absolute_path in split(globpath('~/.dein/eager_load/', '*'), '\n')
-    " echo 'eager file name is: ' . split(absolute_path, '/')[-1]
     call dein#load_toml(absolute_path, {'lazy': 0})
   endfor
   for absolute_path in split(globpath('~/.dein/lazy_load/', '*'), '\n')
-    " echo 'lazy file name is: ' . split(absolute_path, '/')[-1]
     call dein#load_toml(absolute_path, {'lazy': 1})
   endfor
 
-  " プラグインの読み込みとキャッシュ
-  " call dein#load_toml(s:toml, {'lazy': 0})
-  " call dein#load_toml(s:lazy_toml, {'lazy': 1})
-
-  " 設定の終了
   call dein#end()
   call dein#save_state()
 endif
@@ -73,7 +54,7 @@ if dein#check_install()
   call dein#install()
 endif
 
-" dein.tomlやdein_lazy.tomlから削除したプラグインを削除
+" ~/.deinにて削除したプラグインを削除
 let s:removed_plugins = dein#check_clean()
 if len(s:removed_plugins) > 0
   call map(s:removed_plugins, "delete(v:val, 'rf')")
@@ -86,9 +67,8 @@ filetype plugin indent on
 filetype on
 
 " シンタックスハイライトを有効化
-" syntax enable " カスタマイズしたカラー設定がシンタックスハイライトによって上書きされない
-" syntax on     " カスタマイズしたカラー設定がシンタックスハイライトによって上書きされる
-"
+syntax enable
+
 " カラースキームのカスタマイズ
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
@@ -102,7 +82,6 @@ if has('persistent_undo')
   else
     let undo_path = expand('~/.vim/undo')
   endif
-  " let undo_path = expand('~/.vim/undo')
 
   if !isdirectory(undo_path)
     call mkdir(undo_path, 'p')
@@ -162,8 +141,6 @@ nmap <S-l> :tabnext<CR>
 xnoremap <expr> p 'pgv"'.v:register.'y`>'
 xnoremap <expr> P 'Pgv"'.v:register.'y`>'
 
-" MakeViewやLoadViewなどで作られるviewdirを指定する
-" let s:view_dir = expand("~/.vim/view")
 " 折り畳み状態の保存・復帰
 function! LoadView() abort
   try
@@ -199,7 +176,6 @@ augroup END
 "   autocmd BufWritePre * :%s/\v\s+$//ge
 " augroup END
 
-" もしかしたらNeoVimのみにした方が良いかも
 " True Colorを使える様にする
 if has('nvim')
   set termguicolors
@@ -208,9 +184,8 @@ endif
 " https://www.soum.co.jp/misc/vim-advanced/3/
 set re=0
 " swapfileの指定
-set noswapfile
 " set swapfile
-" set directory=$HOME/.vim/swapfiles
+set noswapfile
 " Vimのバッファやレジスタ内などで使用する文字コードの設定
 set encoding=utf-8
 " スクリプト（ここではvimrc）で使われている文字コードを宣言
@@ -235,8 +210,6 @@ set lazyredraw
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
-" Give more space for displaying messages.
-" set cmdheight=2
 " 折り畳み方法の設定
 set foldmethod=syntax
 set foldlevel=99
@@ -252,13 +225,11 @@ set clipboard+=unnamed
 set nowrap
 " 行数を表示する
 set number
-" 現在の行を強調表示
+" 全行描画で動作が遅くなる原因となるため、オフ
 " set cursorline
-" 全行描画で動作が遅くなる原因となるため、オフ
 set nocursorline
-" 現在の行を強調表示（縦）
-" set cursorcolumn
 " 全行描画で動作が遅くなる原因となるため、オフ
+" set cursorcolumn
 set nocursorcolumn
 " beep音・画面フラッシュを無効化
 set vb t_vb=
