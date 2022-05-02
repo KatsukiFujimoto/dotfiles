@@ -25,7 +25,9 @@ echo "upgrading Homebrew"
 brew upgrade
 
 echo "installing applications based on Brewfile"
-brew bundle
+relative_path_for_brewfile="$(dirname $0)/Brewfile"
+absolute_path_for_brewfile="$(pwd)${relative_path_for_brewfile:1}"
+brew bundle --file $absolute_path_for_brewfile
 
 echo "cleaning up Homebrew"
 brew cleanup
