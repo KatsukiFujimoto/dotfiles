@@ -75,3 +75,6 @@ cf() {
   dir=$(find . -maxdepth ${1:-3} -type d | fzf) &&
   cd "$dir"
 }
+check_temperature() {
+  sudo powermetrics -n ${1:-1} | grep -A10 "SMC sensors"
+}
