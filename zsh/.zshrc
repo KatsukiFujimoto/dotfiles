@@ -58,6 +58,10 @@ command -v asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
 # Starship
 command -v starship 1> /dev/null && eval "$(starship init zsh)"
 
+# https://github.com/fohte/rubocop-daemon
+# rubocop関係でasdfよりも後でPATHに入れる必要がある
+export PATH="/usr/local/bin/rubocop-daemon-wrapper:$PATH"
+
 # My Commands
 ch() {
   cd ~
