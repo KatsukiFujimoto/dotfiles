@@ -1,31 +1,34 @@
 [[plugins]]
 repo = "dense-analysis/ale"
 hook_add = '''
-  let g:ale_linters = { "javascript": ["eslint"] }
+  " gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance rubocop-daemon
+  " yarn global add prettier eslint
   let g:ale_fixers = {
       \ "*": ["remove_trailing_lines", "trim_whitespace"],
-      \ "javascript": ["eslint"],
-      \ "rust": ["rustfmt"]
+      \ "javascript": ["prettier", "eslint"],
+      \ "javascriptreact": ["prettier", "eslint"],
+      \ "typescript": ["prettier", "eslint"],
+      \ "typescriptreact": ["prettier", "eslint"],
+      \ "ruby": ["rubocop"],
+      \ "rust": ["rustfmt"],
   \ }
-  let g:ale_disable_lsp = 1
+  let g:ale_ruby_rubocop_auto_correct_all = 1
+  let g:ale_javascript_prettier_use_local_config = 1
+  let g:ale_sign_column_always = 1
   " Vim起動時にALEをOFFにする設定
-  let g:ale_lint_on_enter = 0
-  let g:ale_fix_on_enter = 0
+  let g:ale_disable_lsp = 1
   let g:ale_completion_enabled = 0
-  " テキスト編集時に実行
+  let g:ale_completion_autoimport = 0
+  let g:ale_fix_on_enter = 0
+  let g:ale_lint_on_enter = 0
+  let g:ale_lint_on_save = 0
   let g:ale_lint_on_text_changed = 0
   let g:ale_lint_on_insert_leave = 0
-  " 保存時に実行
-  let g:ale_fix_on_save = 1
+  let g:ale_lint_on_filetype_changed = 0
   " CPU使用率を下げるために指定したlinter以外は実行しないように
   let g:ale_linters_explicit = 1
-  let g:ale_sign_error = ""
-  let g:ale_sign_warning = ""
-  let g:airline#extensions#ale#open_lnum_symbol = "("
-  let g:airline#extensions#ale#close_lnum_symbol = ")"
-  let g:ale_echo_msg_format = "[%linter%]%code: %%s"
-  highlight link ALEErrorSign Tag
-  highlight link ALEWarningSign StorageClass
+  " 保存時に実行
+  let g:ale_fix_on_save = 1
   " Ctrl + kで次の指摘へ、Ctrl + jで前の指摘へ移動
   " nmap <silent> <C-h> <Plug>(ale_previous_wrap)
   " nmap <silent> <C-l> <Plug>(ale_next_wrap)\n

@@ -1,5 +1,16 @@
 {
+  "diagnostic.displayByAle": true,
   "languageserver": {
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    },
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
+    },
     "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],
@@ -7,5 +18,5 @@
       "initializationOptions": {}
     }
   },
-  "solargraph.checkGemVersion" : false
+  "solargraph.diagnostics": true
 }

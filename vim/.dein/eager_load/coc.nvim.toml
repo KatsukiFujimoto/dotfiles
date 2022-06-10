@@ -4,9 +4,6 @@ merge = 0
 rev = "release"
 hook_add = '''
   " 環境移行をしやすい様に、インストールしたいextensionsを指定
-  " coc-rls
-  " coc-rust-analyzer
-  " coc-solargraph https://issueexplorer.com/issue/neoclide/coc-solargraph/61
   let g:coc_global_extensions = [
    \ "coc-json",
    \ "coc-yaml",
@@ -16,14 +13,16 @@ hook_add = '''
    \ "coc-css",
    \ "coc-sh",
    \ "coc-sql",
-   \ "coc-graphql",
    \ "coc-vimlsp",
-   \ "coc-python",
+   \ "coc-pyright",
    \ "coc-rust-analyzer",
    \ "coc-solargraph",
    \ "coc-tsserver",
    \ "coc-eslint",
+   \ "coc-prettier",
    \ "coc-go",
+   \ "coc-docker",
+   \ "coc-xml",
   \ ]
   " ポップアップウィンドウのスクロール
   " 第一引数でスクロール方向、第二引数で行数、第二引数がなければページ単位のスクロール

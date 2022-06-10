@@ -1,7 +1,7 @@
 # PATHの設定
 # https://qiita.com/yutoman027/items/ae11bf22bdbcd645c92a
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:`yarn global bin`
 
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
