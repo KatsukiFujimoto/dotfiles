@@ -26,6 +26,9 @@ ln -snf $(absolute_path_for "git/.gitconfig") ~/.config/
 ln -snf $(absolute_path_for "git/.gitignore") ~/.config/
 ln -snf $(absolute_path_for "git/git_template") ~/.config/
 
+# github cli
+gh config set editor nvim
+
 # iterm2
 ln -snf $(absolute_path_for "iterm/com.googlecode.iterm2.plist") ~/Library/Preferences/
 
