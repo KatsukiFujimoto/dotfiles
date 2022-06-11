@@ -5,6 +5,9 @@ set -u
 # Refs
 ## https://macos-defaults.com/
 
+# Memo
+## .GlobalPreferences NSGlobalDomainは同じdomainを指しているっぽい
+
 # Keyboard
 ## キーのリピート速度
 defaults write -g KeyRepeat -int 1
@@ -39,7 +42,7 @@ defaults write com.apple.menuextra.clock DateFormat -string "\"EEE d MMM HH:mm:s
 
 # Finder
 ## 全ファイルの拡張子を表示する
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write .GlobalPreferences AppleShowAllExtensions -bool true
 ## 隠しファイルの表示
 defaults write com.apple.finder AppleShowAllFiles -bool true
 ## パスバーの表示
@@ -70,9 +73,9 @@ defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -int 1
 
 # Others
 ## 自動で頭文字を大文字にしない
-defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool "false"
+defaults write .GlobalPreferences NSAutomaticCapitalizationEnabled -bool "false"
 ## スペルの訂正を無効にする
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool "false"
+defaults write .GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool "false"
 ## スリープまたはスクリーンセーバから復帰した際、パスワードをすぐに要求する
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
