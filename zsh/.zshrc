@@ -49,7 +49,7 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf
-command -v asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
+command -v asdf 1> /dev/null && . $(brew --prefix asdf)/libexec/asdf.sh
 export PATH="$(yarn global bin):$PATH"
 
 # tmux
