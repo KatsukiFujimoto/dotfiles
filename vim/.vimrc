@@ -13,8 +13,10 @@ if has('nvim')
 endif
 
 " ================ dein.vim ================
-" :call dein#update('dein.vim') " dein.vimをアップデートする
-" :call dein#update() " プラグインをアップデートする
+" dein.vimをアップデートする
+" dein.vimのインストールされたリポジトリにてgit pull origin masterを実行する
+" dein.vimでインストールしたプラグインをアップデートする
+" :call dein#update()
 " :call dein#recache_runtimepath() " キャッシュをクリア
 
 " dein.vimインストール時に指定したディレクトリをセット
