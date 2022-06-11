@@ -14,6 +14,8 @@ defaults write -g InitialKeyRepeat -int 11
 # Trackpad
 ## 軌跡の速さ
 defaults write .GlobalPreferences com.apple.trackpad.scaling -int 3
+## ２本指でクリックまたはタップでクリックとして認識させる
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
 # Mouse
 ## 軌跡の速さ
@@ -36,16 +38,12 @@ defaults write .GlobalPreferences _HIHideMenuBar -bool false
 defaults write com.apple.menuextra.clock DateFormat -string "\"EEE d MMM HH:mm:ss\""
 
 # Finder
-## 拡張子まで表示
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 ## 全ファイルの拡張子を表示する
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 ## 隠しファイルの表示
 defaults write com.apple.finder AppleShowAllFiles -bool true
 ## パスバーの表示
 defaults write com.apple.finder ShowPathbar -bool true
-## デフォルトのデータ保存先（ディスク or icloud）
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool true
 
 # Battery
 ## バッテリーを%表示
@@ -78,6 +76,10 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool "false"
 ## スリープまたはスクリーンセーバから復帰した際、パスワードをすぐに要求する
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+## デフォルトでiCloudではなくディスクに保存する
+defaults write .GlobalPreferences NSDocumentSaveNewDocumentsToCloud -int 0
+## スワイプの方向
+defaults write .GlobalPreferences com.apple.swipescrolldirection -int 0
 ## 立ち上げ時の起動音の制御
 ### sudo nvram StartupMute=%01
 
