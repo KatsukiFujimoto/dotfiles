@@ -47,7 +47,13 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -f "$HOME/.fzf.zsh" ]
+then
+  source ~/.fzf.zsh
+else
+  $(brew --prefix)/opt/fzf/install
+  source ~/.fzf.zsh
+fi
 
 # asdf
 command -v asdf 1> /dev/null && . $(brew --prefix asdf)/libexec/asdf.sh
