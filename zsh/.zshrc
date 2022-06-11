@@ -28,9 +28,6 @@ fpath=(~/.zsh $fpath)
 # git completion
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 
-# git prompt
-source ~/.zsh/git-prompt.sh
-
 # GitHub CLI comepletion
 command -v gh 1> /dev/null && eval "$(gh completion -s zsh)"
 
