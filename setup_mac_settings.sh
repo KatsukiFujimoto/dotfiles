@@ -65,6 +65,9 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 # Security
 ## ファイアウォールon
 sudo defaults write /Library/Preferences/com.Apple.alf globalstate -int 1
+## スリープまたはスクリーンセーバから復帰した際、パスワードをすぐに要求する
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Accessibility
 ## 視差効果を減らす
@@ -76,9 +79,6 @@ defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -int 1
 defaults write .GlobalPreferences NSAutomaticCapitalizationEnabled -bool "false"
 ## スペルの訂正を無効にする
 defaults write .GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool "false"
-## スリープまたはスクリーンセーバから復帰した際、パスワードをすぐに要求する
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
 ## デフォルトでiCloudではなくディスクに保存する
 defaults write .GlobalPreferences NSDocumentSaveNewDocumentsToCloud -int 0
 ## スワイプの方向
