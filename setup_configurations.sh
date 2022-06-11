@@ -24,8 +24,8 @@ ln -snf $(absolute_path_for "alfred/com.runningwithcrayons.Alfred-Preferences.pl
 
 # git
 mkdir -p ~/.config
-ln -snf $(absolute_path_for "git/.gitconfig") ~/.config/
-ln -snf $(absolute_path_for "git/.gitignore") ~/.config/
+ln -snf $(absolute_path_for "git/.gitconfig") ~/
+ln -snf $(absolute_path_for "git/.gitignore") ~/
 ln -snf $(absolute_path_for "git/git_template") ~/.config/
 
 # github cli
