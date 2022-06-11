@@ -76,6 +76,7 @@ cask "flameshot"
 cask "docker"
 cask "homebrew/cask-fonts/font-meslo-lg-nerd-font"
 cask "between"
+cask "alt-tab"
 # terminal
 cask "iterm2"
 cask "alacritty"

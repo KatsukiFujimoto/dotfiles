@@ -1743,6 +1743,12 @@
         "options": {
           "full_name": "between"
         }
+      },
+      "alt-tab": {
+        "version": "6.42.0",
+        "options": {
+          "full_name": "alt-tab"
+        }
       }
     },
     "mas": {
