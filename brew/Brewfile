@@ -1,4 +1,5 @@
 tap "mutagen-io/mutagen"
+tap "heroku/brew"
 
 brew "ansible"
 brew "argocd"
