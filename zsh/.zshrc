@@ -7,8 +7,6 @@ then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-export PATH='/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
-
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
