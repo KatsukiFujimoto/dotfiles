@@ -74,7 +74,6 @@ cask "alfred"
 cask "karabiner-elements"
 cask "flameshot"
 cask "docker"
-cask "gitify"
 cask "homebrew/cask-fonts/font-meslo-lg-nerd-font"
 cask "between"
 # terminal
