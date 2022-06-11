@@ -1743,6 +1743,12 @@
         "options": {
           "full_name": "alt-tab"
         }
+      },
+      "meetingbar": {
+        "version": "4.0.5",
+        "options": {
+          "full_name": "meetingbar"
+        }
       }
     },
     "mas": {
