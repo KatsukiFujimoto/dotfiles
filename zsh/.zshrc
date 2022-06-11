@@ -1,7 +1,7 @@
 # PATHの設定
 # https://qiita.com/yutoman027/items/ae11bf22bdbcd645c92a
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:`yarn global bin`
+export PATH='/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
 
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
@@ -49,6 +49,7 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 
 # asdf
 command -v asdf 1> /dev/null && . /usr/local/opt/asdf/libexec/asdf.sh
+export PATH="$(yarn global bin):$PATH"
 
 # tmux
 # SHELL LOGIN WITH TMUX / If not running interactively, do not do anything
