@@ -65,6 +65,11 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 ## ファイアウォールon
 sudo defaults write /Library/Preferences/com.Apple.alf globalstate -int 1
 
+# Accessibility
+## 視差効果を減らす
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -int 1
+
 # Others
 ## 自動で頭文字を大文字にしない
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool "false"
