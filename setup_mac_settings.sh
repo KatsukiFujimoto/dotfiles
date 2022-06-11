@@ -77,6 +77,8 @@ defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -int 1
 # Others
 ## 自動で頭文字を大文字にしない
 defaults write .GlobalPreferences NSAutomaticCapitalizationEnabled -bool "false"
+## ライブ変換をなしにする
+defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -int 0
 ## スペルの訂正を無効にする
 defaults write .GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool "false"
 ## デフォルトでiCloudではなくディスクに保存する
