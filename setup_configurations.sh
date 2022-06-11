@@ -16,9 +16,6 @@ ln -snf $(absolute_path_for "karabiner/karabiner.json") ~/.config/karabiner/
 # rectangle
 ln -snf $(absolute_path_for "rectangle/com.knollsoft.Rectangle.plist") ~/Library/Preferences/
 
-# hyperswitch
-ln -snf $(absolute_path_for "hyperswitch/com.bahoom.HyperSwitch.plist") ~/Library/Preferences/
-
 # git
 mkdir -p ~/.config
 ln -snf $(absolute_path_for "git/.gitconfig") ~/
