@@ -1666,12 +1666,6 @@
           "full_name": "clipy"
         }
       },
-      "hyperswitch": {
-        "version": "0.2.592-dev",
-        "options": {
-          "full_name": "hyperswitch"
-        }
-      },
       "appcleaner": {
         "version": "3.6.4,4270",
         "options": {
