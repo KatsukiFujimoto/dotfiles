@@ -1,6 +1,12 @@
 # PATHの設定
 # https://qiita.com/yutoman027/items/ae11bf22bdbcd645c92a
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
+# Apple Silicon Mac用のPATHの設定
+if test $(uname -m) = 'arm64'
+then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 export PATH='/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
 
 # ヒストリーの設定
