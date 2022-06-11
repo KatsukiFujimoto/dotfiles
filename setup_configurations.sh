@@ -19,9 +19,6 @@ ln -snf $(absolute_path_for "rectangle/com.knollsoft.Rectangle.plist") ~/Library
 # hyperswitch
 ln -snf $(absolute_path_for "hyperswitch/com.bahoom.HyperSwitch.plist") ~/Library/Preferences/
 
-# alfred
-ln -snf $(absolute_path_for "alfred/com.runningwithcrayons.Alfred-Preferences.plist") ~/Library/Preferences/
-
 # git
 mkdir -p ~/.config
 ln -snf $(absolute_path_for "git/.gitconfig") ~/
@@ -30,9 +27,6 @@ ln -snf $(absolute_path_for "git/git_template") ~/.config/
 
 # github cli
 gh config set editor nvim
-
-# iterm2
-ln -snf $(absolute_path_for "iterm/com.googlecode.iterm2.plist") ~/Library/Preferences/
 
 # zsh
 ln -snf $(absolute_path_for "zsh/.zshrc") ~/
