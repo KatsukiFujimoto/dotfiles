@@ -10,6 +10,7 @@ absolute_path_for() {
 }
 
 # karabiner
+mkdir -p ~/.config/karabiner
 ln -snf $(absolute_path_for "karabiner/karabiner.json") ~/.config/karabiner/
 
 # rectangle
@@ -22,6 +23,7 @@ ln -snf $(absolute_path_for "hyperswitch/com.bahoom.HyperSwitch.plist") ~/Librar
 ln -snf $(absolute_path_for "alfred/com.runningwithcrayons.Alfred-Preferences.plist") ~/Library/Preferences/
 
 # git
+mkdir -p ~/.config
 ln -snf $(absolute_path_for "git/.gitconfig") ~/.config/
 ln -snf $(absolute_path_for "git/.gitignore") ~/.config/
 ln -snf $(absolute_path_for "git/git_template") ~/.config/
