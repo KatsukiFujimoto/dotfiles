@@ -2,6 +2,14 @@
 
 set -u
 
+relative_dir_path=$(dirname $0)
+absolute_path_for() {
+  relative_path="$relative_dir_path/$1"
+  absolute_path="$(pwd)${relative_path:1}"
+  echo $absolute_path
+}
+source $(absolute_path_for "dock.sh")
+
 # Refs
 ## https://macos-defaults.com/
 
@@ -19,6 +27,7 @@ defaults write -g InitialKeyRepeat -int 11
 defaults write .GlobalPreferences com.apple.trackpad.scaling -int 3
 ## ２本指でクリックまたはタップでクリックとして認識させる
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
 
 # Mouse
 ## 軌跡の速さ
@@ -33,6 +42,28 @@ defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
 ## ウィンドウをしまうときのエフェクト
 defaults write com.apple.dock mineffect -string "scale"
+## Dockに表示するアプリやフォルダなどの指定
+### デフォルトのアプリを消す
+defaults write com.apple.dock persistent-apps -array
+### デフォルトのアプリ以外のものを消す
+defaults write com.apple.dock persistent-others -array
+# Dockに表示するアプリやフォルダを追加
+for app (
+  '/System/Applications/System Preferences.app'
+  '/System/Applications/Launchpad.app'
+  '/System/Applications/App Store.app'
+  '/Applications/Google Chrome.app'
+); do
+  add_app_to_dock $app
+done
+unset app
+
+for folder (
+  $HOME/Downloads
+); do
+  add_folder_to_dock $folder -a 2
+done
+unset folder
 
 # MenuBar
 ## MenuBarを自動的に表示/非表示
@@ -47,6 +78,16 @@ defaults write .GlobalPreferences AppleShowAllExtensions -bool true
 defaults write com.apple.finder AppleShowAllFiles -bool true
 ## パスバーの表示
 defaults write com.apple.finder ShowPathbar -bool true
+## ステータスバーの表示
+defaults write com.apple.finder ShowStatusBar -bool true
+## デフォルトで表示するフォルダーの指定
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME/"
+## networkやUSBボリューム上に.DS_Storeを作成しないようにする
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+## デフォルトのアイコン表示方法の指定(`Icnv`, `Clmv`, `Glyv`)
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Battery
 ## バッテリーを%表示
@@ -81,10 +122,18 @@ defaults write .GlobalPreferences NSAutomaticCapitalizationEnabled -bool "false"
 defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -int 0
 ## スペルの訂正を無効にする
 defaults write .GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool "false"
+## ダッシュの自動置換を無効にする
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+## ピリオドの自動置換を無効にする
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+## クォーテーションの自動置換を無効にする
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 ## デフォルトでiCloudではなくディスクに保存する
 defaults write .GlobalPreferences NSDocumentSaveNewDocumentsToCloud -int 0
 ## スワイプの方向
 defaults write .GlobalPreferences com.apple.swipescrolldirection -int 0
+## カーソルサイズを調節
+defaults write com.apple.universalaccess mouseDriverCursorSize -int 2
 ## 立ち上げ時の起動音の制御
 ### sudo nvram StartupMute=%01
 
@@ -116,3 +165,4 @@ defaults write com.google.Chrome NSUserKeyEquivalents '{
 killall Dock
 killall Finder
 killall SystemUIServer
+killall cfprefsd
