@@ -43,7 +43,7 @@ ln -snf $(absolute_path_for "alacritty/.alacritty.yml") ~/
 # vim
 mkdir -p ~/.vim
 ln -snf $(absolute_path_for "vim/.vimrc") ~/
-ln -snf $(absolute_path_for "vim/.dein") ~/.vim/
+ln -snf $(absolute_path_for "vim/.dein") ~/
 ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.vim/
 
 # neovim
