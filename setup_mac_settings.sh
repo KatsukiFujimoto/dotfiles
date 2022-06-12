@@ -114,6 +114,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 ## 視差効果を減らす
 defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
 defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -int 1
+defaults write com.apple.universalaccess reduceMotion -int 1
+## 透明度を下げる
+defaults write com.apple.universalaccess reduceTransparency -int 1
 
 # Others
 ## 自動で頭文字を大文字にしない
