@@ -1758,6 +1758,10 @@
       "LINE": {
         "id": "539883307",
         "version": "7.9.0"
+      },
+      "Spark": {
+        "id": "1176895641",
+        "version": "2.11.20"
       }
     }
   },
@@ -1766,7 +1770,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.5.1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4121cbfa42ede4b9fda607d37931991eadb8d770",
+        "Homebrew/homebrew-core": "e4ec445c050107b74dc262996a602ca8becbe507",
         "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.2.1",
         "macOS": "11.4"

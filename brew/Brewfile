@@ -86,3 +86,4 @@ cask "alacritty"
 # https://github.com/kovidgoyal/kitty
 
 mas "LINE", id: 539883307
+mas "Spark", id: 1176895641
