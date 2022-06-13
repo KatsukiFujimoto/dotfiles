@@ -72,10 +72,8 @@ filetype on
 syntax enable
 
 " カラースキームのカスタマイズ
-autocmd ColorScheme * highlight Normal ctermbg=none
-autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight Visual guibg=#585858 ctermbg=231
-" autocmd ColorScheme * highlight Comment ctermfg=244
+autocmd ColorScheme * highlight MatchParen guifg=white gui=bold
 
 " Undoの永続化
 if has('persistent_undo')
