@@ -46,6 +46,7 @@ brew "tree"
 brew "wget"
 brew "yarn"
 
+cask "google-cloud-sdk"
 cask "ngrok"
 cask "virtualbox"
 cask "vagrant"
