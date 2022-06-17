@@ -9,6 +9,9 @@ asdf plugin add python
 asdf plugin add nodejs
 asdf plugin add golang
 
+asdf plugin add terraform
+asdf plugin add terragrunt
+
 asdf plugin update --all
 
 asdf install
