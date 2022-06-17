@@ -40,6 +40,9 @@ ln -snf $(absolute_path_for "tmux/.tmux.conf") ~/
 # alacritty
 ln -snf $(absolute_path_for "alacritty/.alacritty.yml") ~/
 
+# asdf
+ln -snf $(absolute_path_for "asdf/.tool-versions") ~/
+
 # vim
 mkdir -p ~/.vim
 ln -snf $(absolute_path_for "vim/.vimrc") ~/
