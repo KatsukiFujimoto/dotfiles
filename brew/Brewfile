@@ -45,6 +45,7 @@ brew "tmux"
 brew "tree"
 brew "wget"
 brew "yarn"
+brew "vim"
 
 cask "google-cloud-sdk"
 cask "ngrok"
