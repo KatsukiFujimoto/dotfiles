@@ -78,6 +78,7 @@ cask "homebrew/cask-fonts/font-meslo-lg-nerd-font"
 cask "between"
 cask "alt-tab"
 cask "meetingbar"
+cask "dropbox"
 # terminal
 cask "iterm2"
 cask "alacritty"
