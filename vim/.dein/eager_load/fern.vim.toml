@@ -13,6 +13,7 @@ hook_add = '''
     " そのメソッドへのキーマップを変えた上でやる必要がある
     nmap <silent> <buffer> <C-b> <Plug>(fern-action-redraw)
     nmap <silent> <buffer> <C-l> :wincmd l<CR>
+    nmap <silent> <buffer> cd <Plug>(fern-action-cd)
     " ディレクトリのアイコンが緑色、ディレクトリ名が赤色になってしまうので上書き
     highlight Directory ctermfg=8 ctermbg=NONE cterm=NONE guifg=#6B7089 guibg=NONE gui=NONE
     highlight FernBranchText ctermfg=8 ctermbg=NONE cterm=NONE guifg=#bbbfc7 guibg=NONE gui=NONE
