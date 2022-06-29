@@ -43,6 +43,9 @@ ln -snf $(absolute_path_for "alacritty/.alacritty.yml") ~/
 # asdf
 ln -snf $(absolute_path_for "asdf/.tool-versions") ~/
 
+# alt-tab
+ln -snf $(absolute_path_for "alttab/com.lwouis.alt-tab-macos.plist") ~/Library/Preferences/
+
 # vim
 mkdir -p ~/.vim
 ln -snf $(absolute_path_for "vim/.vimrc") ~/
