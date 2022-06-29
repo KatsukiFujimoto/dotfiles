@@ -26,6 +26,8 @@ brew update
 
 echo "upgrading Homebrew"
 brew upgrade
+brew upgrade --cask --greedy
+command -v mas 1> /dev/null && mas upgrade
 
 echo "installing applications based on Brewfile"
 brew bundle --file $(absolute_path_for "brew/Brewfile")
