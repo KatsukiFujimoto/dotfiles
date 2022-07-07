@@ -80,6 +80,7 @@ cask "between"
 cask "alt-tab"
 cask "meetingbar"
 cask "dropbox"
+cask "stats"
 # terminal
 cask "iterm2"
 cask "alacritty"
