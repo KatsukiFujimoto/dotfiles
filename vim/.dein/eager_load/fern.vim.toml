@@ -23,4 +23,5 @@ hook_add = '''
     autocmd FileType fern call s:init_fern()
   augroup END
   noremap <C-a> :Fern . -reveal=% -drawer -toggle -width=42<CR>
+  noremap <C-c> :Fern %:h -reveal=% -drawer -toggle -width=42<CR>
 '''
