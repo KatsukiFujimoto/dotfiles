@@ -19,5 +19,6 @@
     }
   },
   "solargraph.diagnostics": true,
-  "coc.preferences.jumpCommand": "vnew"
+  "coc.preferences.jumpCommand": "vnew",
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always"
 }
