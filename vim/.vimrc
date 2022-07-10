@@ -141,6 +141,8 @@ nmap <S-l> :tabnext<CR>
 xnoremap <expr> p 'pgv"'.v:register.'y`>'
 xnoremap <expr> P 'Pgv"'.v:register.'y`>'
 
+command! ShowPath :echo expand("%:p")
+
 " 折り畳み状態の保存・復帰
 function! LoadView() abort
   try
