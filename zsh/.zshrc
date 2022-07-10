@@ -78,6 +78,11 @@ ch() {
 cc() {
   cd ~/codes
 }
+chf() {
+  local dir
+  dir=$(find ~ -type d \( -name ".git" -o -name "node_modules" \) -prune -o -type d -name "*" -maxdepth ${1:-5} | fzf) &&
+  cd "$dir"
+}
 ccf() {
   local dir
   dir=$(find ~/codes -maxdepth ${1:-3} -type d | fzf) &&
