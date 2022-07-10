@@ -18,5 +18,6 @@
       "initializationOptions": {}
     }
   },
-  "solargraph.diagnostics": true
+  "solargraph.diagnostics": true,
+  "coc.preferences.jumpCommand": "vnew"
 }
