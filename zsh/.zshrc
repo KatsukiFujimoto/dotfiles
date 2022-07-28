@@ -90,7 +90,7 @@ ccf() {
 }
 cf() {
   local dir
-  dir=$(find . -maxdepth ${1:-3} -type d | fzf) &&
+  dir=$(find . -maxdepth ${1:-5} -type d | fzf) &&
   cd "$dir"
 }
 check_temperature() {
