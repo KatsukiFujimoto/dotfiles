@@ -83,7 +83,7 @@
       "int" : 0
     },
     "moveCursorAcrossDisplays" : {
-      "int" : 2
+      "int" : 0
     },
     "notifiedOfProblemApps" : {
       "bool" : false
@@ -145,6 +145,9 @@
     "specifiedWidth" : {
       "float" : 1680
     },
+    "stageSize" : {
+      "float" : 190
+    },
     "subsequentExecutionMode" : {
       "int" : 0
     },
@@ -152,7 +155,7 @@
       "bool" : true
     },
     "todo" : {
-      "int" : 2
+      "int" : 0
     },
     "todoApplication" : {
 
@@ -186,6 +189,10 @@
       "keyCode" : 14,
       "modifierFlags" : 786432
     },
+    "larger" : {
+      "keyCode" : 24,
+      "modifierFlags" : 524288
+    },
     "lastThird" : {
       "keyCode" : 5,
       "modifierFlags" : 786432
@@ -209,7 +216,11 @@
     "rightHalf" : {
       "keyCode" : 37,
       "modifierFlags" : 524288
+    },
+    "smaller" : {
+      "keyCode" : 27,
+      "modifierFlags" : 524288
     }
   },
-  "version" : "62"
+  "version" : "63"
 }
