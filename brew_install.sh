@@ -30,7 +30,7 @@ brew upgrade --cask --greedy
 command -v mas 1> /dev/null && mas upgrade
 
 echo "installing applications based on Brewfile"
-brew bundle --file $(absolute_path_for "brew/Brewfile")
+brew bundle --file $(absolute_path_for "brew/Brewfile") --no-lock
 
 echo "cleaning up Homebrew"
 brew cleanup
