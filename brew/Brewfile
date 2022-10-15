@@ -81,6 +81,7 @@ cask "alt-tab"
 cask "meetingbar"
 cask "dropbox"
 cask "stats"
+cask "clickup"
 # terminal
 cask "iterm2"
 cask "alacritty"
