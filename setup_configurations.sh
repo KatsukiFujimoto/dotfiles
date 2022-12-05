@@ -56,3 +56,7 @@ ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.vim/
 mkdir -p ~/.config/nvim
 ln -snf $(absolute_path_for "vim/.vimrc") ~/.config/nvim/init.vim
 ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.config/nvim/
+
+# rubocop
+mkdir -p ~/.config/rubocop
+ln -snf $(absolute_path_for "rubocop/config.yml") ~/.config/rubocop/
