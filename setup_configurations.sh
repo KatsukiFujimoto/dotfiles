@@ -21,6 +21,7 @@ mkdir -p ~/.config
 ln -snf $(absolute_path_for "git/.gitconfig") ~/
 ln -snf $(absolute_path_for "git/.gitignore") ~/
 ln -snf $(absolute_path_for "git/git_template") ~/.config/
+ln -snf $(absolute_path_for "git/tig/.tigrc") ~/
 
 # github cli
 gh config set editor nvim
