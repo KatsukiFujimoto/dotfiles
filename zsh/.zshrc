@@ -1,3 +1,6 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
 # PATHの設定
 # Apple Silicon Mac用のPATHの設定
 if test $(uname -m) = 'arm64'
@@ -96,3 +99,6 @@ cf() {
 check_temperature() {
   sudo powermetrics -n ${1:-1} | grep -A10 "SMC sensors"
 }
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
