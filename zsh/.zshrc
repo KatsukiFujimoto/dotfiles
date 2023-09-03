@@ -9,7 +9,9 @@ then
 else
   # https://qiita.com/yutoman027/items/ae11bf22bdbcd645c92a
   alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
+  export PATH="/usr/local/sbin:$PATH"
 fi
+
 
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
