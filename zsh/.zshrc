@@ -62,7 +62,6 @@ fi
 
 # asdf
 command -v asdf 1> /dev/null && . $(brew --prefix asdf)/libexec/asdf.sh
-export PATH="$(yarn global bin):$PATH"
 
 # tmux
 # SHELL LOGIN WITH TMUX / If not running interactively, do not do anything
