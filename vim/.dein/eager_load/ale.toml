@@ -1,8 +1,8 @@
 [[plugins]]
 repo = "dense-analysis/ale"
 hook_add = '''
-  " gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance rubocop-daemon
-  " yarn global add prettier eslint
+  " solargraph様に随時bundle installをしてからyard gemsでgemのドキュメンテーションをセットアップする
+  " gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance
   let g:ale_fixers = {
       \ "*": ["remove_trailing_lines", "trim_whitespace"],
       \ "javascript": ["prettier", "eslint"],
@@ -13,6 +13,7 @@ hook_add = '''
       \ "rust": ["rustfmt"],
   \ }
   let g:ale_ruby_rubocop_auto_correct_all = 1
+  let g:ale_ruby_rubocop_options = "--server"
   let g:ale_sign_column_always = 1
   " Vim起動時にALEをOFFにする設定
   let g:ale_disable_lsp = 1
