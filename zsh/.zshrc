@@ -12,6 +12,8 @@ else
   export PATH="/usr/local/sbin:$PATH"
 fi
 
+# エディタ
+export EDITOR='nvim'
 
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
