@@ -39,7 +39,8 @@ ln -snf $(absolute_path_for "ripgrep/.rgignore") ~/
 ln -snf $(absolute_path_for "tmux/.tmux.conf") ~/
 
 # alacritty
-ln -snf $(absolute_path_for "alacritty/.alacritty.yml") ~/
+# ln -snf $(absolute_path_for "alacritty/.alacritty.yml") ~/
+ln -snf $(absolute_path_for "alacritty/.alacritty.toml") ~/
 
 # asdf
 ln -snf $(absolute_path_for "asdf/.tool-versions") ~/
