@@ -66,7 +66,7 @@ program = "/bin/zsh"
 decorations = "full"
 dynamic_padding = false
 dynamic_title = true
-opacity = 1.0
+opacity = 0.9
 startup_mode = "Maximized"
 title = "Alacritty"
 
