@@ -7,3 +7,4 @@ docker-compose.override.yml
 memo.md
 .tool-versions
 .local/share
+.yardoc
