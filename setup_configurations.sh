@@ -25,6 +25,8 @@ ln -snf $(absolute_path_for "git/tig/.tigrc") ~/
 
 # github cli
 gh config set editor nvim
+mkdir -p ~/.config/gh
+ln -snf $(absolute_path_for "gh/config.yml") ~/.config/gh/
 
 # zsh
 ln -snf $(absolute_path_for "zsh/.zshrc") ~/
