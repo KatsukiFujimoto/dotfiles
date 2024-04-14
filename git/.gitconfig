@@ -18,6 +18,7 @@
     rb-remote            = !git rebase origin/$(git br --show-current)
     rb-master            = !git rebase origin/master
     delete-merged-branch = !"f(){ git br --merged | egrep -v 'develop|staging|production|master|main' | xargs git branch -d; };f"
+    delete-branches      = !git branch | fzf --multi | xargs git branch -D
 
 [user]
   	name  = KatsukiFujimoto
