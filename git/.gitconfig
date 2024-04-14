@@ -3,7 +3,7 @@
     editor = nvim
 
 [alias]
-    ch                   = checkout
+    co                   = checkout
     chf                  = !git branch -a | fzf | xargs git checkout
     st                   = status
     cm                   = commit
