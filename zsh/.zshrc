@@ -82,17 +82,17 @@ cc() {
 }
 chf() {
   local dir
-  dir=$(find ~ -type d \( -name ".git" -o -name "node_modules" \) -prune -o -type d -name "*" -maxdepth ${1:-5} | fzf) &&
+  dir=$(find ~ -type d \( -name ".git" -o -name "node_modules" \) -prune -o -type d -name "*" -maxdepth ${1:-5} | fzf --preview 'tree -C -L 1 {} | head -200') &&
   cd "$dir"
 }
 ccf() {
   local dir
-  dir=$(find ~/codes -maxdepth ${1:-3} -type d | fzf) &&
+  dir=$(find ~/codes -maxdepth ${1:-3} -type d | fzf --preview 'tree -C -L 1 {} | head -200') &&
   cd "$dir"
 }
 cf() {
   local dir
-  dir=$(find . -maxdepth ${1:-5} -type d | fzf) &&
+  dir=$(find . -maxdepth ${1:-5} -type d | fzf --preview 'tree -C -L 1 {} | head -200') &&
   cd "$dir"
 }
 check_temperature() {
