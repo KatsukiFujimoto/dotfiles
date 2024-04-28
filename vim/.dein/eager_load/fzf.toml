@@ -22,7 +22,7 @@ hook_add = '''
   noremap <leader>H :History:<CR>
   noremap <leader>r :Rg<CR>
   noremap <leader>d :call fzf#run(fzf#wrap({
-    \ 'source': 'find ~ -type d \( -name ".git" -o -name "node_modules" \) -prune -o -type d -name "*" -maxdepth 5',
+    \ 'source': 'find ~ -type d \( -name ".git" -o -name "node_modules" \) -prune -o -type d -name "*" -maxdepth 4',
     \ 'sink': 'cd'
     \ }))<CR>
 '''
