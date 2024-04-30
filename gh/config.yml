@@ -11,6 +11,7 @@ aliases:
     co: pr checkout
     cof: '!gh pr list -L 30 | cut -f 1,2 | fzf --preview="gh pr view {1}" | cut -f 1 | xargs gh pr checkout'
     prf: '!gh pr list -L 30 | cut -f 1,2 | fzf --preview="gh pr view {1}" | cut -f 1 | xargs gh pr view -w'
+    requested_pr: '!gh repo ls Lecto-inc --limit 50 | cut -f 1 | xargs -I REPO gh pr list --search "review-requested:@me" --repo REPO'
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
 http_unix_socket:
 # What web browser gh should use when opening URLs. If blank, will refer to environment.
