@@ -3,7 +3,14 @@ repo = "easymotion/vim-easymotion"
 hook_add = '''
   let g:EasyMotion_do_mapping = 0
   let g:EasyMotion_smartcase = 1
+  " s{char}{char} to move to {char}{char}
   nmap <leader>s <Plug>(easymotion-s2)
-  map <leader>j <Plug>(easymotion-j)
-  map <leader>k <Plug>(easymotion-k)
+  " Move to word
+  map  <Leader>w <Plug>(easymotion-bd-w)
+  nmap <Leader>w <Plug>(easymotion-overwin-w)
+  " Move to line
+  map <Leader>L <Plug>(easymotion-bd-jk)
+  nmap <Leader>L <Plug>(easymotion-overwin-line)
+  " map <leader>j <Plug>(easymotion-j)
+  " map <leader>k <Plug>(easymotion-k)
 '''
