@@ -2,4 +2,7 @@
 repo = "reireias/vim-cheatsheet"
 hook_add = '''
   let g:cheatsheet#cheat_file = "~/.vim/cheatsheet.md"
+  let g:cheatsheet#float_window = 1
+  let g:cheatsheet#float_window_width_ratio = 0.8
+  let g:cheatsheet#float_window_height_ratio = 0.8
 '''
