@@ -129,6 +129,8 @@
     -   git log -> <leader>gl
     -   git blame -> <leader>gb
     -   開いているファイルの git diff -> :Gvdiffsplit
+    -   開いているファイルをブラウザで開く -> :GBrowse
+    -   開いているファイルの指定範囲をブラウザで開く -> visual mode + :GBrowse
 
 ## Coc 操作
 
