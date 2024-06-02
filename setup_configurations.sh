@@ -54,6 +54,7 @@ mkdir -p ~/.vim
 ln -snf $(absolute_path_for "vim/.vimrc") ~/
 ln -snf $(absolute_path_for "vim/.dein") ~/
 ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.vim/
+ln -snf $(absolute_path_for "vim/cheatsheet.md") ~/.vim/
 
 # neovim
 mkdir -p ~/.config/nvim
