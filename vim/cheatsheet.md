@@ -145,6 +145,10 @@
     -   開いているファイルの git diff -> :Gvdiffsplit
     -   開いているファイルをブラウザで開く -> :GBrowse
     -   開いているファイルの指定範囲をブラウザで開く -> visual mode + :GBrowse
+    -   開いているファイルと origin/master との差分を表示 -> :Gvdiffsplit origin/master
+    -   今いるブランチと origin/master の差分ログを表示 -> :tabnew +Gllog\ origin/master..
+        -   quickfix を使うなら Gclog
+        -   ログ詳細の差分やファイルなどを Ctrl + m で開いて確認することができる
 
 ## Coc 操作
 
