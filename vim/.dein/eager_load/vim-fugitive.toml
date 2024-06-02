@@ -8,4 +8,8 @@ hook_add = '''
   noremap <leader>gd :Git diff<CR>
   noremap <leader>gl :Git log<CR>
   noremap <leader>gb :Git blame<CR>
+  " 開いているファイルと origin/master との差分を表示
+  noremap <leader>gdm :Gvdiffsplit origin/master<CR>
+  " 今いるブランチと origin/master の差分ログを表示
+  noremap <leader>glm :tabnew +Gllog\ origin/master..<CR>
 '''
