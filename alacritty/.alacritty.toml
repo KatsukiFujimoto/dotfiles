@@ -58,7 +58,7 @@ key = "Q"
 mods = "Command"
 
 [scrolling]
-history = 10000
+history = 100000
 multiplier = 3
 
 [shell]

@@ -17,8 +17,8 @@ export EDITOR='nvim'
 
 # ヒストリーの設定
 HISTFILE=~/.zsh_history
-HISTSIZE=50000
-SAVEHIST=50000
+HISTSIZE=100000
+SAVEHIST=100000
 # 同じコマンドであれば古い方を削除する
 setopt hist_ignore_all_dups
 # 直前と同じコマンドはヒストリに追加しない
