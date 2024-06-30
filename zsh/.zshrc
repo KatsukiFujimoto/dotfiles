@@ -95,6 +95,9 @@ cf() {
   dir=$(find . -maxdepth ${1:-5} -type d | fzf --preview 'tree -C -L 1 {} | head -200') &&
   cd "$dir"
 }
+apply_asdf() {
+  ~/codes/dotfiles/setup_version_managers.sh
+}
 check_temperature() {
   sudo powermetrics -n ${1:-1} | grep -A10 "SMC sensors"
 }

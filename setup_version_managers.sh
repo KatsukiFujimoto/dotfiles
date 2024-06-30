@@ -15,3 +15,18 @@ asdf plugin add terragrunt
 asdf plugin update --all
 
 asdf install
+
+npm install --global \
+  corepack@latest \
+  prettier@latest \
+  eslint@latest
+corepack enable
+gem install \
+  bundler \
+  solargraph \
+  rubocop \
+  rubocop-rails \
+  rubocop-rspec \
+  rubocop-rspec_rails \
+  rubocop-factory_bot \
+  rubocop-performance
