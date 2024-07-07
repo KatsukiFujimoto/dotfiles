@@ -1,5 +1,6 @@
 tap "mutagen-io/mutagen"
 tap "heroku/brew"
+tap "daipeihust/tap"
 
 brew "ansible"
 brew "argocd"
@@ -46,6 +47,7 @@ brew "tree"
 brew "wget"
 brew "vim"
 brew "ctop"
+brew "im-select"
 
 cask "google-cloud-sdk"
 cask "ngrok"
