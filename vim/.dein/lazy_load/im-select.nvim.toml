@@ -1,0 +1,13 @@
+[[plugins]]
+repo = "keaising/im-select.nvim"
+on_if = "has('nvim')"
+on_event = ["VimEnter"]
+lua_post_source = '''
+  -- luaのrequireはruntimepathの各ディレクトリのluaディレクトリ内をrequireに指定のパスで探すため、im_selectを指定している
+  require("im_select").setup({
+    default_im_select = "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
+    set_previous_events = {},
+    set_previous_events = { "InsertEnter" },
+    set_default_events = { "VimEnter", "FocusGained", "InsertLeave", "CmdlineLeave" }
+  })
+'''
