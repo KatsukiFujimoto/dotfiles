@@ -91,6 +91,7 @@ cask "fig"
 # https://github.com/wez/wezterm
 # https://github.com/kovidgoyal/kitty
 cask "owasp-zap"
+cask "dozer"
 
 mas "LINE", id: 539883307
 mas "Spark", id: 1176895641
