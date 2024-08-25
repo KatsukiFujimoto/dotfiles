@@ -86,7 +86,6 @@ cask "clickup"
 # terminal
 cask "iterm2"
 cask "alacritty"
-cask "fig"
 # https://github.com/warpdotdev/Warp
 # https://github.com/wez/wezterm
 # https://github.com/kovidgoyal/kitty
