@@ -13,9 +13,6 @@ absolute_path_for() {
 mkdir -p ~/.config/karabiner
 ln -snf $(absolute_path_for "karabiner/karabiner.json") ~/.config/karabiner/
 
-# rectangle
-ln -snf $(absolute_path_for "rectangle/com.knollsoft.Rectangle.plist") ~/Library/Preferences/
-
 # git
 mkdir -p ~/.config
 ln -snf $(absolute_path_for "git/.gitconfig") ~/
@@ -45,9 +42,6 @@ ln -snf $(absolute_path_for "alacritty/.alacritty.toml") ~/
 
 # asdf
 ln -snf $(absolute_path_for "asdf/.tool-versions") ~/
-
-# alt-tab
-ln -snf $(absolute_path_for "alttab/com.lwouis.alt-tab-macos.plist") ~/Library/Preferences/
 
 # vim
 mkdir -p ~/.vim
