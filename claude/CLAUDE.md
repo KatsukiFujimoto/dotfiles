@@ -1,0 +1,1 @@
+- Yoin の音声ログ: ~/Documents/voicelog/

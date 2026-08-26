@@ -58,3 +58,7 @@ ln -snf $(absolute_path_for "vim/coc-settings.json") ~/.config/nvim/
 # rubocop
 mkdir -p ~/.config/rubocop
 ln -snf $(absolute_path_for "rubocop/config.yml") ~/.config/rubocop/
+
+# Claude
+mkdir -p ~/.claude
+ln -snf $(absolute_path_for "claude/CLAUDE.md") ~/.claude
